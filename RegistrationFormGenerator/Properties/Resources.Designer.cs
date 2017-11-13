@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RegistrationFormGenerator.Properties
-{
-
-
+namespace RegistrationFormGenerator.Properties {
+    using System;
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -22,49 +22,89 @@ namespace RegistrationFormGenerator.Properties
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources
-    {
-
+    internal class Resources {
+        
         private static global::System.Resources.ResourceManager resourceMan;
-
+        
         private static global::System.Globalization.CultureInfo resourceCulture;
-
+        
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources()
-        {
+        internal Resources() {
         }
-
+        
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager
-        {
-            get
-            {
-                if ((resourceMan == null))
-                {
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RegistrationFormGenerator.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-
+        
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture
-        {
-            get
-            {
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
                 return resourceCulture;
             }
-            set
-            {
+            set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ExcelFormet {
+            get {
+                object obj = ResourceManager.GetObject("ExcelFormet", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon favicon {
+            get {
+                object obj = ResourceManager.GetObject("favicon", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;!DOCTYPE html&gt;
+        ///&lt;html&gt;
+        ///&lt;head&gt;
+        ///	&lt;meta charset=&quot;utf-8&quot;&gt;
+        ///	&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+        ///	&lt;title&gt;&lt;/title&gt;
+        ///	&lt;link rel=&quot;stylesheet&quot; href=&quot;&quot;&gt;
+        ///&lt;/head&gt;
+        ///&lt;body&gt;
+        ///	&lt;div id=&quot;Serial&quot;&gt;1&lt;/div&gt;
+        ///	&lt;img src=&quot;&quot; id=&quot;Image&quot;/&gt;
+        ///	&lt;div id=&quot;NameBengali&quot;&gt;2&lt;/div&gt;
+        ///	&lt;div id=&quot;NameEnglish&quot;&gt;3&lt;/div&gt;
+        ///	&lt;div id=&quot;DateOfBirth&quot;&gt;&lt;/div&gt;
+        ///	&lt;div id=&quot;RegistrationNo&quot;&gt;&lt;/div&gt;
+        ///	&lt;div id=&quot;RollNo&quot;&gt;&lt;/div&gt;
+        ///	&lt;div id=&quot;Session&quot;&gt;&lt;/div&gt;
+        ///	&lt;div id=&quot;FatherNameBengali&quot;&gt;&lt;/div&gt;
+        ///	&lt;div id=&quot;FatherNameEnglish&quot;&gt;&lt;/div&gt;
+        ///	&lt;div id=&quot;MotherNam [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Html_Template {
+            get {
+                return ResourceManager.GetString("Html_Template", resourceCulture);
             }
         }
     }

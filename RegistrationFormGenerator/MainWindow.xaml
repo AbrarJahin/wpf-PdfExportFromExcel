@@ -4,9 +4,110 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RegistrationFormGenerator"
+        xmlns:adorners="http://gu.se/Adorners"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Registration Card Generator" Height="157" Width="525">
+
     <Grid>
-        
+        <Label
+            x:Name="LebelExcelFile"
+            Content="Excel File"
+            HorizontalAlignment="Left"
+            Margin="10,10,0,0"
+            VerticalAlignment="Top"
+            Width="97"/>
+        <TextBox
+            x:Name="ExcelFileLocation"
+            HorizontalAlignment="Left"
+            Height="22"
+            Margin="99,10,0,0"
+            TextWrapping="Wrap"
+            VerticalAlignment="Top"
+            Width="318"
+            IsReadOnly="True"
+            AcceptsReturn="True"
+            adorners:Watermark.Text="Please choose your Excel File Location"
+        />
+        <Button
+            x:Name="ButtonChooseFile"
+            Content="Choose File"
+            HorizontalAlignment="Left"
+            Margin="422,10,0,0"
+            VerticalAlignment="Top"
+            Width="87" Click="ButtonChooseExcelFile_Click" Height="22"
+        />
+        <Label
+            x:Name="LebelImageFolder"
+            Content="Image Folder"
+            HorizontalAlignment="Left"
+            Margin="10,36,0,0"
+            VerticalAlignment="Top"/>
+        <TextBox
+            x:Name="ImageFolderLocation"
+            HorizontalAlignment="Left"
+            Height="23"
+            Margin="99,37,0,0"
+            TextWrapping="Wrap"
+            VerticalAlignment="Top"
+            Width="318"
+            IsReadOnly="True"
+            adorners:Watermark.Text="Please choose Image Folder Location Here"/>
+        <Button
+            x:Name="ButtonImageFolder"
+            Content="Image Folder"
+            HorizontalAlignment="Left"
+            Margin="422,37,0,0"
+            VerticalAlignment="Top"
+            Width="87" Height="23" Click="ButtonImageFolder_Click"/>
+        <Label
+            x:Name="LebelOutputFolder"
+            Content="Output Folder"
+            HorizontalAlignment="Left"
+            Margin="10,60,0,0"
+            VerticalAlignment="Top"/>
+        <TextBox
+            x:Name="OutputFolderLocation"
+            HorizontalAlignment="Left"
+            Height="23"
+            Margin="99,65,0,0"
+            TextWrapping="Wrap"
+            VerticalAlignment="Top"
+            Width="318"
+            IsReadOnly="True"
+            adorners:Watermark.Text="Please choose Output Folder Location Here"/>
+        <Button
+            x:Name="ButtonOutputFolder"
+            Content="Output Folder"
+            HorizontalAlignment="Left"
+            Margin="422,65,0,0"
+            VerticalAlignment="Top"
+            Width="87" Click="ButtonOutputFolder_Click" Height="23"/>
+        <TextBlock
+            HorizontalAlignment="Left"
+            Margin="10,97,0,0"
+            TextWrapping="Wrap"
+            Text="** Image should be .jpg file and Names should be same as Serial in Excel File"
+            VerticalAlignment="Top"
+            Foreground="Red"
+            Width="407"/>
+        <ProgressBar
+            x:Name="ProgressPdfCreatePercenage"
+            HorizontalAlignment="Left"
+            Height="23"
+            Margin="0,93,0,0"
+            VerticalAlignment="Top"
+            Width="422"
+            Value="0"
+            Visibility="Collapsed"
+        />
+        <Button
+            x:Name="ButtonGenerate"
+            Content="Generate"
+            HorizontalAlignment="Left"
+            Margin="422,93,0,0"
+            VerticalAlignment="Top"
+            Width="87"
+            Height="25" Click="ButtonGenerate_Click"/>
     </Grid>
+
 </Window>
