@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using HtmlAgilityPack;
+using System.Windows;
 
 namespace RegistrationFormGenerator.Library
 {
@@ -6,7 +7,15 @@ namespace RegistrationFormGenerator.Library
     {
         internal static void GeneratePdf(ExcelDataRow data)
         {
-            string html = Properties.Resources.Html_Template;
+            string htmlTemplate = Properties.Resources.Html_Template;
+
+            HtmlDocument htmlDocument = new HtmlDocument();
+            htmlDocument.LoadHtml(htmlTemplate);
+
+            //Update html
+            HtmlNode demoNode = htmlDocument.GetElementbyId("NameBengali");
+            demoNode.InnerHtml = "Try Me";
+            string html = htmlDocument.DocumentNode.OuterHtml;
             MessageBox.Show(html);
         }
     }

@@ -101,6 +101,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Library\ExcelDataRow.cs" />
+    <Compile Include="Library\ExcelReader.cs" />
+    <Compile Include="Library\PdfGenerator.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -133,9 +136,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fabicon.ico" />
   </ItemGroup>
   <ItemGroup>
     <None Include="favicon.ico" />
