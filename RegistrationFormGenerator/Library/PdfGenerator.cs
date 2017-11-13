@@ -1,32 +1,73 @@
 ﻿using HtmlAgilityPack;
-using System.IO;
 using System.Windows;
-using PdfSharp;
-using PdfSharp.Pdf;
-using TheArtOfDev.HtmlRenderer.PdfSharp;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using iTextSharp.text.html.simpleparser;
+using System.IO;
+using System;
+using iTextSharp.text.html;
+using System.Collections.Generic;
 
 namespace RegistrationFormGenerator.Library
 {
     class ExcelPdfGenerator
     {
-        internal static bool GeneratePdf(ExcelDataRow data, string imageFolderLocation, string outputFolderLocation)
+        private static string currentRegistrationNo;
+        internal static bool GenerateHtmlPdf(ExcelDataRow data, string imageFolderLocation, string outputFolderLocation)
         {
-            string htmlFileLocation = GenerateHtml(data,imageFolderLocation, outputFolderLocation);
-            MessageBox.Show(data.Serial);
-            return GeneratePdf(htmlFileLocation, @"D:\path.pdf");
+            string htmlString = GenerateHtml(data,imageFolderLocation);
+            currentRegistrationNo = data.RegistrationNo;
+            return GenerateHtmlPdf(htmlString, @outputFolderLocation + "\\" + data.Serial+".pdf");
         }
 
-        private static bool GeneratePdf(string htmlFileLocation, string outputPdflocation)
+        private static bool GenerateHtmlPdf(string htmlString, string outputPdflocation)
         {
-            string html = File.ReadAllText(htmlFileLocation);
-            PdfDocument pdf = PdfGenerator.GeneratePdf(html, PageSize.A4);
-            //XPdfFontOptions options = new XPdfFontOptions(PdfFontEncoding.Unicode, PdfFontEmbedding.Always);
-            pdf.Save(outputPdflocation);
-            //should use this to show unicode - http://www.codescratcher.com/asp-net/display-unicode-characters-in-converting-html-to-pdf/
-            return true;
+            bool ifCreatedSuccessfully = true;
+            Document doc = new Document(PageSize.A3);
+            PdfWriter wri = PdfWriter.GetInstance(doc, new FileStream(outputPdflocation, FileMode.Create));
+            doc.Open();
+
+            try
+            {
+                //Path to our font
+                string arialuniTff = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Fonts),
+                    "ARIALUNI.TTF");
+                //Register the font with iTextSharp
+                FontFactory.Register(arialuniTff);
+
+                //Create a new stylesheet
+                StyleSheet ST = new StyleSheet();
+                //Set the default body font to our registered font's internal name
+                ST.LoadTagStyle(HtmlTags.BODY, HtmlTags.FACE, "Arial Unicode MS");
+                //Set the default encoding to support Unicode characters
+                ST.LoadTagStyle(HtmlTags.BODY, HtmlTags.ENCODING, BaseFont.IDENTITY_H);
+
+                //Parse our HTML using the stylesheet created above
+                List<IElement> list = HTMLWorker.ParseToList(new StringReader(htmlString), ST);
+
+                //Loop through each element, don't bother wrapping in P tags
+                foreach (var element in list)
+                {
+                    doc.Add(element);
+                }
+                doc.Close();
+                wri.Close();
+            }
+            catch (Exception ex)
+            {
+                ifCreatedSuccessfully = false;
+                Console.WriteLine(ex);
+                MessageBox.Show("PDF Generation Failed for RegNo - "+ currentRegistrationNo);
+                //throw;
+            }
+            finally
+            {
+                //should use this to show unicode - http://www.codescratcher.com/asp-net/display-unicode-characters-in-converting-html-to-pdf/
+            }
+            return ifCreatedSuccessfully;
         }
 
-        private static string GenerateHtml(ExcelDataRow data, string imageFolderLocation, string outputFolderLocation)
+        private static string GenerateHtml(ExcelDataRow data, string imageFolderLocation)
         {
             string htmlTemplate = Properties.Resources.Html_Template;
 
@@ -47,14 +88,7 @@ namespace RegistrationFormGenerator.Library
             htmlDocument.GetElementbyId("MotherNameEnglish").InnerHtml = data.MotherNameEnglish;
             htmlDocument.GetElementbyId("Session").InnerHtml = data.Session;
 
-            string html = htmlDocument.DocumentNode.OuterHtml;
-
-            string outputFileLocation = outputFolderLocation + "\\" + data.Serial + ".html";
-            //File.WriteAllText(outputFileLocation, html);
-            File.WriteAllText(@"D:\path.html", html);
-
-            //return outputFileLocation;
-            return @"D:\path.html";
+            return htmlDocument.DocumentNode.OuterHtml;
         }
     }
 }

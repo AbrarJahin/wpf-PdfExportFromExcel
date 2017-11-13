@@ -4,6 +4,7 @@ using Microsoft.WindowsAPICodePack.Dialogs;
 using Microsoft.Win32;
 using System.Collections.Generic;
 using System;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using RegistrationFormGenerator.Library;
@@ -69,8 +70,8 @@ namespace RegistrationFormGenerator
 
             foreach (ExcelDataRow data in excelDataList)
             {
-                ProgressPdfCreatePercenage.Value += 1/excelDataList.Count*100;  //Progress bar increament
-                ExcelPdfGenerator.GeneratePdf(data, ImageFolderLocation.Text,OutputFolderLocation.Text);      //Generate PDF Here
+                ProgressPdfCreatePercenage.Value += (int)(100/excelDataList.Count);  //Progress bar increament
+                ExcelPdfGenerator.GenerateHtmlPdf(data, ImageFolderLocation.Text,OutputFolderLocation.Text);      //Generate PDF Here
             }
 
             ResetFields();
@@ -79,12 +80,12 @@ namespace RegistrationFormGenerator
         private void ResetFields()
         {
             DeleteAllTempFiles(OutputFolderLocation.Text);  //Delete All HTML File
+            MessageBox.Show("All Generation Done");
+            Process.Start(@OutputFolderLocation.Text);
+            //Hide all
             ExcelFileLocation.Text = "";
             ImageFolderLocation.Text = "";
             OutputFolderLocation.Text = "";
-
-            ProgressPdfCreatePercenage.Value = 100;
-            MessageBox.Show("All Generation Done");
             ProgressPdfCreatePercenage.Visibility = Visibility.Collapsed;
         }
 

@@ -81,30 +81,35 @@ namespace RegistrationFormGenerator.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;!DOCTYPE html&gt;
-        ///&lt;html&gt;
-        ///&lt;head&gt;
-        ///	&lt;meta charset=&quot;utf-8&quot;&gt;
-        ///	&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-        ///	&lt;title&gt;&lt;/title&gt;
-        ///	&lt;link rel=&quot;stylesheet&quot; href=&quot;&quot;&gt;
-        ///&lt;/head&gt;
-        ///&lt;body&gt;
-        ///	&lt;div id=&quot;Serial&quot;&gt;1&lt;/div&gt;
-        ///	&lt;img src=&quot;&quot; id=&quot;Image&quot;/&gt;
-        ///	&lt;div id=&quot;NameBengali&quot;&gt;2&lt;/div&gt;
-        ///	&lt;div id=&quot;NameEnglish&quot;&gt;3&lt;/div&gt;
-        ///	&lt;div id=&quot;DateOfBirth&quot;&gt;&lt;/div&gt;
-        ///	&lt;div id=&quot;RegistrationNo&quot;&gt;&lt;/div&gt;
-        ///	&lt;div id=&quot;RollNo&quot;&gt;&lt;/div&gt;
-        ///	&lt;div id=&quot;Session&quot;&gt;&lt;/div&gt;
-        ///	&lt;div id=&quot;FatherNameBengali&quot;&gt;&lt;/div&gt;
-        ///	&lt;div id=&quot;FatherNameEnglish&quot;&gt;&lt;/div&gt;
-        ///	&lt;div id=&quot;MotherNam [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+        ///	&lt;head&gt;
+        ///		&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+        ///		&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no&quot; /&gt;
+        ///		&lt;title&gt;  CERTIFICATE OF REGISTRATION&lt;/title&gt;
+        ///	&lt;/head&gt;
+        ///	&lt;body&gt;
+        ///		&lt;table align=&quot;right&quot; width=&quot;30%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; border=&quot;1&quot;&gt;
+        ///			&lt;tbody&gt;
+        ///				  &lt;tr&gt;
+        ///					&lt;td width=&quot;250&quot; valign=&quot;top&quot;&gt;
+        ///						&lt;p&gt;
+        ///							রেজিস্ট্রেশন নম্বর&lt;br&gt;(REGISTRATION NO.)
+        ///						&lt;/p&gt;
+        /// [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Html_Template {
             get {
                 return ResourceManager.GetString("Html_Template", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] SolaimanLipi {
+            get {
+                object obj = ResourceManager.GetObject("SolaimanLipi", resourceCulture);
+                return ((byte[])(obj));
             }
         }
     }
