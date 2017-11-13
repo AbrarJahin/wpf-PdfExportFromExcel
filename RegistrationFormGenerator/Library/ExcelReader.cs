@@ -62,7 +62,7 @@ namespace RegistrationFormGenerator.Library
                         switch (j)
                         {
                             case 1:
-                                row.Serial = cellValue;
+                                row.Serial = sheetNo+cellValue;
                                 break;
                             case 2:
                                 row.NameBengali = cellValue;

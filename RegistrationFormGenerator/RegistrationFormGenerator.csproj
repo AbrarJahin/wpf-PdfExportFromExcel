@@ -39,7 +39,8 @@
     <StartupObject>RegistrationFormGenerator.App</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>favicon.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Gu.Wpf.Adorners, Version=1.2.0.0, Culture=neutral, PublicKeyToken=6dfb64f9972bd31d, processorArchitecture=MSIL">
@@ -136,9 +137,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="favicon.ico" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Html_Template.html" />
