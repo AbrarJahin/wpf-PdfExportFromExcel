@@ -70,7 +70,7 @@ namespace RegistrationFormGenerator
             foreach (ExcelDataRow data in excelDataList)
             {
                 ProgressPdfCreatePercenage.Value += 1/excelDataList.Count*100;  //Progress bar increament
-                ExcelPdfGenerator.GeneratePdf(data, OutputFolderLocation.Text);      //Generate PDF Here
+                ExcelPdfGenerator.GeneratePdf(data, ImageFolderLocation.Text,OutputFolderLocation.Text);      //Generate PDF Here
             }
 
             ResetFields();
