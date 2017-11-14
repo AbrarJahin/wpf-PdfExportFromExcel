@@ -82,20 +82,20 @@ namespace RegistrationFormGenerator.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
-        ///	&lt;head&gt;
-        ///		&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
-        ///		&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no&quot; /&gt;
-        ///		&lt;title&gt;  CERTIFICATE OF REGISTRATION&lt;/title&gt;
-        ///	&lt;/head&gt;
-        ///	&lt;body&gt;
-        ///		&lt;table align=&quot;right&quot; width=&quot;30%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; border=&quot;1&quot;&gt;
-        ///			&lt;tbody&gt;
-        ///				  &lt;tr&gt;
-        ///					&lt;td width=&quot;250&quot; valign=&quot;top&quot;&gt;
-        ///						&lt;p&gt;
-        ///							রেজিস্ট্রেশন নম্বর&lt;br&gt;(REGISTRATION NO.)
-        ///						&lt;/p&gt;
-        /// [rest of string was truncated]&quot;;.
+        ///&lt;head&gt;
+        ///    &lt;title&gt;  CERTIFICATE OF REGISTRATION&lt;/title&gt;
+        ///&lt;/head&gt;
+        ///&lt;body&gt;
+        ///    &lt;table align=&quot;right&quot; width=&quot;30%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; border=&quot;1&quot;&gt;
+        ///        &lt;tbody&gt;
+        ///            &lt;tr&gt;
+        ///                &lt;td width=&quot;250&quot; valign=&quot;top&quot;&gt;
+        ///                    &lt;p&gt;
+        ///                        রেজিস্ট্রেশন নম্বর&lt;br /&gt;(REGISTRATION NO.)
+        ///                    &lt;/p&gt;
+        ///                &lt;/td&gt;
+        ///                &lt;td colspan=&quot;3&quot; width=&quot;70&quot; valign=&quot;top&quot;&gt;
+        ///                    &lt;p id=&quot;R [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Html_Template {
             get {

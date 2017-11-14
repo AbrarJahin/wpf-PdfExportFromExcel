@@ -5,16 +5,21 @@ VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistrationFormGenerator", "RegistrationFormGenerator\RegistrationFormGenerator.csproj", "{6572C2F0-CBFE-4E5E-8234-F93C5715893A}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{1CF6995A-ED9C-4547-8FC8-97A818E66DA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6572C2F0-CBFE-4E5E-8234-F93C5715893A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6572C2F0-CBFE-4E5E-8234-F93C5715893A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6572C2F0-CBFE-4E5E-8234-F93C5715893A}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{6572C2F0-CBFE-4E5E-8234-F93C5715893A}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{6572C2F0-CBFE-4E5E-8234-F93C5715893A}.Debug|Any CPU.Deploy.0 = Release|Any CPU
 		{6572C2F0-CBFE-4E5E-8234-F93C5715893A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6572C2F0-CBFE-4E5E-8234-F93C5715893A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CF6995A-ED9C-4547-8FC8-97A818E66DA4}.Debug|Any CPU.ActiveCfg = Debug
+		{1CF6995A-ED9C-4547-8FC8-97A818E66DA4}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
