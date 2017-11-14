@@ -7,6 +7,7 @@ using System.IO;
 using System;
 using iTextSharp.text.html;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace RegistrationFormGenerator.Library
 {
@@ -22,10 +23,14 @@ namespace RegistrationFormGenerator.Library
 
         private static bool GenerateHtmlPdf(string htmlString, string outputPdflocation)
         {
+            //Should add embaded Image - https://stackoverflow.com/a/19398426/2193439
+            //Add Bengla Text - https://www.codeproject.com/Questions/1150398/How-do-I-write-bengali-in-pdfptable-using-iTextsha
+            //PDFSharp - https://stackoverflow.com/a/31109987/2193439
+            //Adding Unicode - https://stackoverflow.com/a/31606661/2193439
             bool ifCreatedSuccessfully = true;
-            Document doc = new Document(PageSize.A3);
-            PdfWriter wri = PdfWriter.GetInstance(doc, new FileStream(outputPdflocation, FileMode.Create));
-            doc.Open();
+            Document pdfDoc = new Document(PageSize.A3);
+            PdfWriter pdfWriter = PdfWriter.GetInstance(pdfDoc, new FileStream(outputPdflocation, FileMode.Create));
+            pdfDoc.Open();
 
             try
             {
@@ -48,16 +53,22 @@ namespace RegistrationFormGenerator.Library
                 //Loop through each element, don't bother wrapping in P tags
                 foreach (var element in list)
                 {
-                    doc.Add(element);
+                    pdfDoc.Add(element);
                 }
-                doc.Close();
-                wri.Close();
+                pdfDoc.Close();
+                pdfWriter.Close();
             }
             catch (Exception ex)
             {
                 ifCreatedSuccessfully = false;
-                Console.WriteLine(ex);
-                MessageBox.Show("PDF Generation Failed for RegNo - "+ currentRegistrationNo);
+                if (Debugger.IsAttached == true)
+                {
+                    MessageBox.Show(ex.StackTrace);
+                }
+                else
+                {
+                    MessageBox.Show("Image not found for RegNo - " + currentRegistrationNo);
+                }
                 //throw;
             }
             finally

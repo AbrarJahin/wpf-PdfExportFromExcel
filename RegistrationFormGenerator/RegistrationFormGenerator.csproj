@@ -134,6 +134,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Library\Base64EmbadedImageTagProcessor.cs" />
     <Compile Include="Library\ExcelDataRow.cs" />
     <Compile Include="Library\ExcelReader.cs" />
     <Compile Include="Library\PdfGenerator.cs" />
