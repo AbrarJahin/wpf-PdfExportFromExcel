@@ -91,7 +91,7 @@ namespace RegistrationFormGenerator
 
         private void DeleteAllTempFiles(string folderLocation)
         {
-            List<FileInfo> files = GetFiles(folderLocation, ".html", ".obj");
+            List<FileInfo> files = GetFiles(folderLocation, ".xml", ".obj");
 
             foreach (FileInfo file in files)
                 try

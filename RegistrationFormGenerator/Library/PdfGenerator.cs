@@ -23,6 +23,9 @@ namespace RegistrationFormGenerator.Library
 
         private static bool GenerateHtmlPdf(string htmlString, string outputPdflocation)
         {
+            //Save in HTML
+            File.WriteAllText(outputPdflocation+".html",htmlString );
+
             //Should add embaded Image - https://stackoverflow.com/a/19398426/2193439
             //Add Bengla Text - https://www.codeproject.com/Questions/1150398/How-do-I-write-bengali-in-pdfptable-using-iTextsha
             //PDFSharp - https://stackoverflow.com/a/31109987/2193439
@@ -35,15 +38,18 @@ namespace RegistrationFormGenerator.Library
             try
             {
                 //Path to our font
-                string arialuniTff = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Fonts),
-                    "ARIALUNI.TTF");
+                string solaimanLipiTff = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Fonts),
+                    "SolaimanLipi.ttf");
                 //Register the font with iTextSharp
-                FontFactory.Register(arialuniTff);
+                FontFactory.Register(solaimanLipiTff);
+
+                //Register SolaimanLipi font
+                //FontFactory.Register(Encoding.Unicode.GetString(Properties.Resources.SolaimanLipi));
 
                 //Create a new stylesheet
                 StyleSheet ST = new StyleSheet();
                 //Set the default body font to our registered font's internal name
-                ST.LoadTagStyle(HtmlTags.BODY, HtmlTags.FACE, "Arial Unicode MS");
+                ST.LoadTagStyle(HtmlTags.BODY, HtmlTags.FACE, "SolaimanLipi");
                 //Set the default encoding to support Unicode characters
                 ST.LoadTagStyle(HtmlTags.BODY, HtmlTags.ENCODING, BaseFont.IDENTITY_H);
 
