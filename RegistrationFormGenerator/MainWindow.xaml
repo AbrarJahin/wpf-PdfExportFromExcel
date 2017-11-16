@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:RegistrationFormGenerator"
         xmlns:adorners="http://gu.se/Adorners"
         mc:Ignorable="d"
+        ResizeMode="NoResize"
         Title="Registration Card Generator" Height="157" Width="525">
 
     <Grid>

@@ -1,13 +1,5 @@
 ﻿using HtmlAgilityPack;
-using System.Windows;
-using iTextSharp.text;
-using iTextSharp.text.pdf;
-using iTextSharp.text.html.simpleparser;
 using System.IO;
-using System;
-using iTextSharp.text.html;
-using System.Collections.Generic;
-using System.Diagnostics;
 
 namespace RegistrationFormGenerator.Library
 {
@@ -23,14 +15,14 @@ namespace RegistrationFormGenerator.Library
 
         private static bool GenerateHtmlPdf(string htmlString, string outputPdflocation)
         {
+            bool ifCreatedSuccessfully = true;
             //Save in HTML
             File.WriteAllText(outputPdflocation+".html",htmlString );
-
+            /*
             //Should add embaded Image - https://stackoverflow.com/a/19398426/2193439
             //Add Bengla Text - https://www.codeproject.com/Questions/1150398/How-do-I-write-bengali-in-pdfptable-using-iTextsha
             //PDFSharp - https://stackoverflow.com/a/31109987/2193439
             //Adding Unicode - https://stackoverflow.com/a/31606661/2193439
-            bool ifCreatedSuccessfully = true;
             Document pdfDoc = new Document(PageSize.A3);
             PdfWriter pdfWriter = PdfWriter.GetInstance(pdfDoc, new FileStream(outputPdflocation, FileMode.Create));
             pdfDoc.Open();
@@ -81,6 +73,7 @@ namespace RegistrationFormGenerator.Library
             {
                 //should use this to show unicode - http://www.codescratcher.com/asp-net/display-unicode-characters-in-converting-html-to-pdf/
             }
+            */
             return ifCreatedSuccessfully;
         }
 

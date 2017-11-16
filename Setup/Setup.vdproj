@@ -83,13 +83,13 @@
         "Entry"
         {
         "MsmKey" = "8:_B129C29B793FCB33944A78EB414588FA"
-        "OwnerKey" = "8:_3C96EF9801C145F2BCC2592792991E2F"
+        "OwnerKey" = "8:_7C1A6C4E92D5F0A83DD81EFDFAE33964"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_B129C29B793FCB33944A78EB414588FA"
-        "OwnerKey" = "8:_7C1A6C4E92D5F0A83DD81EFDFAE33964"
+        "OwnerKey" = "8:_3C96EF9801C145F2BCC2592792991E2F"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -137,55 +137,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_7C1A6C4E92D5F0A83DD81EFDFAE33964"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_D7F67D81E2B1F4F5AEE546BEEF3A423B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_BB2229253C1A9AFC4438CE28681BD9EC"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_7EA661CC10552884FB83EF5A7D5B7A8F"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_CDAC0D5C1ACC8C9FB20CEE1E0ABADAD6"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_A0EFFDE47532D10122E15BBE7AB9F90B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_B129C29B793FCB33944A78EB414588FA"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_124667DEBE76AC19AABA970DB9E8E491"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_6F55B7A04FC3E8E437F19BDEA1155EBA"
+        "OwnerKey" = "8:_5F87DD18C3A79A28DEF88F4DFE2A4C82"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -197,7 +149,55 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_5F87DD18C3A79A28DEF88F4DFE2A4C82"
+        "OwnerKey" = "8:_6F55B7A04FC3E8E437F19BDEA1155EBA"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_124667DEBE76AC19AABA970DB9E8E491"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_B129C29B793FCB33944A78EB414588FA"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_A0EFFDE47532D10122E15BBE7AB9F90B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_CDAC0D5C1ACC8C9FB20CEE1E0ABADAD6"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_7EA661CC10552884FB83EF5A7D5B7A8F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_BB2229253C1A9AFC4438CE28681BD9EC"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_D7F67D81E2B1F4F5AEE546BEEF3A423B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_7C1A6C4E92D5F0A83DD81EFDFAE33964"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -302,11 +302,6 @@
             "AssemblyAsmDisplayName" = "8:HtmlRenderer, Version=1.5.0.6, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_124667DEBE76AC19AABA970DB9E8E491"
-                    {
-                    "Name" = "8:HtmlRenderer.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:HtmlRenderer.dll"
             "TargetName" = "8:"
@@ -333,11 +328,6 @@
             "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
                 "ScatterAssemblies"
                 {
-                    "_5F87DD18C3A79A28DEF88F4DFE2A4C82"
-                    {
-                    "Name" = "8:System.Net.Http.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:System.Net.Http.dll"
             "TargetName" = "8:"
@@ -384,11 +374,6 @@
             "AssemblyAsmDisplayName" = "8:HtmlAgilityPack, Version=1.6.4.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_6F55B7A04FC3E8E437F19BDEA1155EBA"
-                    {
-                    "Name" = "8:HtmlAgilityPack.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:HtmlAgilityPack.dll"
             "TargetName" = "8:"
@@ -415,11 +400,6 @@
             "AssemblyAsmDisplayName" = "8:PdfSharp.Charting, Version=1.32.3057.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_7C1A6C4E92D5F0A83DD81EFDFAE33964"
-                    {
-                    "Name" = "8:PdfSharp.Charting.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:PdfSharp.Charting.dll"
             "TargetName" = "8:"
@@ -446,11 +426,6 @@
             "AssemblyAsmDisplayName" = "8:itextsharp.xmlworker, Version=5.5.12.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_7EA661CC10552884FB83EF5A7D5B7A8F"
-                    {
-                    "Name" = "8:itextsharp.xmlworker.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:itextsharp.xmlworker.dll"
             "TargetName" = "8:"
@@ -477,11 +452,6 @@
             "AssemblyAsmDisplayName" = "8:Gu.Wpf.Adorners, Version=1.2.0.0, Culture=neutral, PublicKeyToken=6dfb64f9972bd31d, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_8FA1C363C5775F189D703B1CC0FD936A"
-                    {
-                    "Name" = "8:Gu.Wpf.Adorners.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Gu.Wpf.Adorners.dll"
             "TargetName" = "8:"
@@ -508,11 +478,6 @@
             "AssemblyAsmDisplayName" = "8:HtmlRenderer.PdfSharp, Version=1.5.0.6, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_A0EFFDE47532D10122E15BBE7AB9F90B"
-                    {
-                    "Name" = "8:HtmlRenderer.PdfSharp.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:HtmlRenderer.PdfSharp.dll"
             "TargetName" = "8:"
@@ -539,11 +504,6 @@
             "AssemblyAsmDisplayName" = "8:PdfSharp, Version=1.32.3057.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_B129C29B793FCB33944A78EB414588FA"
-                    {
-                    "Name" = "8:PdfSharp.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:PdfSharp.dll"
             "TargetName" = "8:"
@@ -570,11 +530,6 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.WindowsAPICodePack, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_BB2229253C1A9AFC4438CE28681BD9EC"
-                    {
-                    "Name" = "8:Microsoft.WindowsAPICodePack.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Microsoft.WindowsAPICodePack.dll"
             "TargetName" = "8:"
@@ -621,11 +576,6 @@
             "AssemblyAsmDisplayName" = "8:itextsharp, Version=5.5.12.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_CDAC0D5C1ACC8C9FB20CEE1E0ABADAD6"
-                    {
-                    "Name" = "8:itextsharp.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:itextsharp.dll"
             "TargetName" = "8:"
@@ -652,11 +602,6 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.WindowsAPICodePack.Shell, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_D7F67D81E2B1F4F5AEE546BEEF3A423B"
-                    {
-                    "Name" = "8:Microsoft.WindowsAPICodePack.Shell.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Microsoft.WindowsAPICodePack.Shell.dll"
             "TargetName" = "8:"
@@ -743,16 +688,16 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Registration Form Generator"
-        "ProductCode" = "8:{043AC142-058A-43F6-94A3-EE0E0B26982D}"
-        "PackageCode" = "8:{C4D1ECA3-DFFA-4083-AED2-1103DDC60DB1}"
+        "ProductCode" = "8:{6B132402-8EE4-4DBE-A2D4-50CD435EC6BE}"
+        "PackageCode" = "8:{9837B569-4278-49A6-8B4A-8AD09035520B}"
         "UpgradeCode" = "8:{AED40A1A-753E-4981-94EB-D59560BF3DA0}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:0.0.1"
-        "Manufacturer" = "8:BU IT Office"
+        "ProductVersion" = "8:0.0.2"
+        "Manufacturer" = "8:S. M. Abrar Jahin, IT Eng, BU"
         "ARPHELPTELEPHONE" = "8:+8801822804636"
         "ARPHELPLINK" = "8:appnucleus.com"
         "Title" = "8:Registration Form Generator By Abrar jahin"
