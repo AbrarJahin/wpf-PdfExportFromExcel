@@ -80,7 +80,7 @@ namespace RegistrationFormGenerator.Library
                                 row.RollNo = cellValue;
                                 break;
                             case 7:
-                                row.Session = cellValue;
+                                row.SessionBengali = cellValue;
                                 break;
                             case 8:
                                 row.FatherNameBengali = cellValue;
@@ -116,10 +116,19 @@ namespace RegistrationFormGenerator.Library
                                 row.MobileNo = cellValue;
                                 break;
                             case 19:
-                                row.AdmissionCancelled = cellValue;
+                                row.DegreeNameBengali = cellValue;
                                 break;
                             case 20:
+                                row.DegreeNameEnglish = cellValue;
+                                break;
+                            case 21:
+                                row.AdmissionCancelled = cellValue;
+                                break;
+                            case 22:
                                 row.Comment = cellValue;
+                                break;
+                            case 23:
+                                row.SessionEnglish = cellValue;
                                 break;
                             default:
                                 break;

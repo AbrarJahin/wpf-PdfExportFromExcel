@@ -86,8 +86,7 @@ namespace RegistrationFormGenerator.Library
 
             //Update html
             htmlDocument.GetElementbyId("RegistrationNo").InnerHtml = data.RegistrationNo;
-            htmlDocument.GetElementbyId("DepertmentBengali").InnerHtml = data.DepertmentBengali;
-            htmlDocument.GetElementbyId("DepertmentEnglish").InnerHtml = data.DepertmentEnglish;
+
             htmlDocument.GetElementbyId("Image").SetAttributeValue("src", imageFolderLocation +"\\"+ data.RegistrationNo+".jpg");
             htmlDocument.GetElementbyId("NameBengali").InnerHtml = data.NameBengali;
             htmlDocument.GetElementbyId("NameEnglish").InnerHtml = data.NameEnglish;
@@ -96,7 +95,24 @@ namespace RegistrationFormGenerator.Library
             htmlDocument.GetElementbyId("FatherNameEnglish").InnerHtml = data.FatherNameEnglish;
             htmlDocument.GetElementbyId("MotherNameBengali").InnerHtml = data.MotherNameBengali;
             htmlDocument.GetElementbyId("MotherNameEnglish").InnerHtml = data.MotherNameEnglish;
-            htmlDocument.GetElementbyId("Session").InnerHtml = data.Session;
+            htmlDocument.GetElementbyId("SessionBengali").InnerHtml = data.SessionBengali;
+
+            htmlDocument.GetElementbyId("SessionBengali").InnerHtml = data.SessionBengali;
+            htmlDocument.GetElementbyId("SessionEnglish").InnerHtml = data.SessionEnglish;
+
+            htmlDocument.GetElementbyId("FacultyBengali").InnerHtml = data.DegreeNameBengali;
+            htmlDocument.GetElementbyId("FacultyEnglish").InnerHtml = data.DegreeNameEnglish;
+
+            htmlDocument.GetElementbyId("DepertmentBengali").InnerHtml = data.DepertmentBengali;
+            htmlDocument.GetElementbyId("DepertmentEnglish").InnerHtml = data.DepertmentEnglish;
+
+            htmlDocument.GetElementbyId("DepertmentBengaliTable").InnerHtml = data.DepertmentBengali;
+            htmlDocument.GetElementbyId("DepertmentEnglishTable").InnerHtml = data.DepertmentEnglish;
+
+            htmlDocument.GetElementbyId("DegreeNameBengali").InnerHtml = data.DegreeNameEnglish;
+            htmlDocument.GetElementbyId("DegreeNameEnglish").InnerHtml = data.DegreeNameEnglish;
+
+            htmlDocument.GetElementbyId("RollNo").InnerHtml = data.RollNo;
 
             return htmlDocument.DocumentNode.OuterHtml;
         }

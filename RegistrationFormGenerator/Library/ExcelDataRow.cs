@@ -10,7 +10,9 @@
 
         public string RegistrationNo { get; set; }
         public string RollNo { get; set; }
-        public string Session { get; set; }
+
+        public string SessionBengali { get; set; }
+        public string SessionEnglish { get; set; }
 
         public string FatherNameBengali { get; set; }
         public string FatherNameEnglish { get; set; }
@@ -26,6 +28,9 @@
 
         public string DepertmentBengali { get; set; }
         public string DepertmentEnglish { get; set; }
+
+        public string DegreeNameBengali { get; set; }
+        public string DegreeNameEnglish { get; set; }
 
         public string MobileNo { get; set; }
 
