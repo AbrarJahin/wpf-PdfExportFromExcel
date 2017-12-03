@@ -155,6 +155,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Enums.cs" />
     <Compile Include="Library\Base64EmbadedImageTagProcessor.cs" />
     <Compile Include="Library\ExcelDataRow.cs" />
     <Compile Include="Library\ExcelReader.cs" />

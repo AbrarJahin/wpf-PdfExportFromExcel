@@ -3,11 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:RegistrationFormGenerator"
         xmlns:adorners="http://gu.se/Adorners"
         mc:Ignorable="d"
         ResizeMode="NoResize"
-        Title="Registration Card Generator" Height="157" Width="525">
+        Title="Registration Card Generator" Height="414.4" Width="525">
 
     <Grid>
         <Label
@@ -16,7 +15,7 @@
             HorizontalAlignment="Left"
             Margin="10,10,0,0"
             VerticalAlignment="Top"
-            Width="97"/>
+            Width="84"/>
         <TextBox
             x:Name="ExcelFileLocation"
             HorizontalAlignment="Left"
@@ -42,7 +41,7 @@
             Content="Image Folder"
             HorizontalAlignment="Left"
             Margin="10,36,0,0"
-            VerticalAlignment="Top"/>
+            VerticalAlignment="Top" Width="84"/>
         <TextBox
             x:Name="ImageFolderLocation"
             HorizontalAlignment="Left"
@@ -85,7 +84,7 @@
             Width="87" Click="ButtonOutputFolder_Click" Height="23"/>
         <TextBlock
             HorizontalAlignment="Left"
-            Margin="10,97,0,0"
+            Margin="10,354,0,0"
             TextWrapping="Wrap"
             Text="** Image should be .jpg file and Names should be same as Serial in Excel File"
             VerticalAlignment="Top"
@@ -105,10 +104,38 @@
             x:Name="ButtonGenerate"
             Content="Generate"
             HorizontalAlignment="Left"
-            Margin="422,93,0,0"
+            Margin="422,350,0,0"
             VerticalAlignment="Top"
             Width="87"
             Height="25" Click="ButtonGenerate_Click"/>
+
+        <RadioButton GroupName="FacultyName" x:Name="RadioAccountingAndInformation" Content="Business Studies" HorizontalAlignment="Left" Margin="119,133,0,0" VerticalAlignment="Top" Checked="FacultyChanged" />
+        <RadioButton GroupName="FacultyName" x:Name="RadioBangla" Content="Arts and Humanities" HorizontalAlignment="Left" Margin="119,93,0,0" VerticalAlignment="Top" Checked="FacultyChanged" />
+        <RadioButton GroupName="FacultyName" x:Name="RadioBotany" Content="Bio-Sciences" HorizontalAlignment="Left" Margin="119,113,0,0" VerticalAlignment="Top" Checked="FacultyChanged" />
+        <RadioButton GroupName="FacultyName" x:Name="RadioLaw" Content="Law" HorizontalAlignment="Left" Margin="119,153,0,0" VerticalAlignment="Top" Checked="FacultyChanged" />
+        <RadioButton GroupName="FacultyName" x:Name="RadioMathematics" Content="Science and Engineering" HorizontalAlignment="Left" Margin="119,173,0,0" VerticalAlignment="Top" Checked="FacultyChanged" />
+        <RadioButton GroupName="FacultyName" x:Name="RadioSociology" Content="Social Sciences" HorizontalAlignment="Left" Margin="119,193,0,0" VerticalAlignment="Top" Checked="FacultyChanged" />
+
+        <TextBox
+            x:Name="BengaliText"
+            HorizontalAlignment="Left"
+            Height="67"
+            Margin="10,210,0,0"
+            TextWrapping="Wrap"
+            VerticalAlignment="Top"
+            Width="499"
+            adorners:Watermark.Text="Bengali Text"/>
+        <TextBox
+            x:Name="EnglishText"
+            HorizontalAlignment="Left"
+            Height="63"
+            Margin="10,282,0,0"
+            TextWrapping="Wrap"
+            VerticalAlignment="Top"
+            Width="499"
+            adorners:Watermark.Text="English Text"/>
+        <Label Content="Faculty" HorizontalAlignment="Left" Margin="10,113,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.674,-0.038" Width="104" FontSize="30" />
+        
     </Grid>
 
 </Window>

@@ -130,4 +130,40 @@
   <data name="SolaimanLipi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\SolaimanLipi.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="BengaliTextAccountingAndInformation" xml:space="preserve">
+    <value>বরিশাল বিশ্ববিদ্যালয়ে  ২০১৬-১৭ শিক্ষাবর্ষে উল্লেখিত বিভাগ এর ব্যাচেলর অফ বিজনেস এডমিনিস্ট্রেশন (বি. বি. এ.) পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।</value>
+  </data>
+  <data name="BengaliTextBangla" xml:space="preserve">
+    <value>বরিশাল বিশ্ববিদ্যালয়ে  ২০১৬-১৭ শিক্ষাবর্ষে উল্লেখিত বিভাগ এর ব্যাচেলর অফ আর্টস (বি এ) পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।</value>
+  </data>
+  <data name="BengaliTextBotany" xml:space="preserve">
+    <value>বরিশাল বিশ্ববিদ্যালয়ে  ২০১৬-১৭ শিক্ষাবর্ষে উল্লেখিত বিভাগ এর ব্যাচেলর অফ সাইন্স (বি এস) পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।</value>
+  </data>
+  <data name="BengaliTextLaw" xml:space="preserve">
+    <value>বরিশাল বিশ্ববিদ্যালয়ে  ২০১৬-১৭ শিক্ষাবর্ষে উল্লেখিত বিভাগ এর ব্যাচেলর অফ ল (এল এল বি) পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।</value>
+  </data>
+  <data name="BengaliTextMathematics" xml:space="preserve">
+    <value>বরিশাল বিশ্ববিদ্যালয়ে  ২০১৬-১৭ শিক্ষাবর্ষে উল্লেখিত বিভাগ এর ব্যাচেলর অফ সাইন্স (বি এস) পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।</value>
+  </data>
+  <data name="BengaliTextSociology" xml:space="preserve">
+    <value>বরিশাল বিশ্ববিদ্যালয়ে  ২০১৬-১৭ শিক্ষাবর্ষে উল্লেখিত বিভাগ এর ব্যাচেলর অফ সোশ্যাল সাইন্স (বি এস এস) পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।</value>
+  </data>
+  <data name="EnglishTextAccountingAndInformation" xml:space="preserve">
+    <value>The above mentioned student is admitted in the Bachelor of Business Administration (B.B.A.) Program of mentioned Department in the 2016-17 academic year and he is registered as a student of the university.</value>
+  </data>
+  <data name="EnglishTextBangla" xml:space="preserve">
+    <value>The above mentioned student is admitted in the Bachelor of Bachelor of Arts (B.A.) Program of mentioned Department in the 2016-17 academic year and he is registered as a student of the university.</value>
+  </data>
+  <data name="EnglishTextBotany" xml:space="preserve">
+    <value>The above mentioned student is admitted in the Bachelor of Science (B.S.) Program of mentioned Department in the 2016-17 academic year and he is registered as a student of the university.</value>
+  </data>
+  <data name="EnglishTextLaw" xml:space="preserve">
+    <value>The above mentioned student is admitted in the Bachelor of Law (L.L.B.) Program of mentioned Department in the 2016-17 academic year and he is registered as a student of the university.</value>
+  </data>
+  <data name="EnglishTextMathematics" xml:space="preserve">
+    <value>The above mentioned student is admitted in the Bachelor of Science (B.S.) Program of mentioned Department in the 2016-17 academic year and he is registered as a student of the university.</value>
+  </data>
+  <data name="EnglishTextSociology" xml:space="preserve">
+    <value>The above mentioned student is admitted in the Bachelor of Social Science (B.S.S.) Program of mentioned Department in the 2016-17 academic year and he is registered as a student of the university.</value>
+  </data>
 </root>

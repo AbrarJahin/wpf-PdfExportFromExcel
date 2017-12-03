@@ -1,5 +1,4 @@
 ﻿using System.Windows;
-using System.Timers;
 using Microsoft.WindowsAPICodePack.Dialogs;
 using Microsoft.Win32;
 using System.Collections.Generic;
@@ -8,6 +7,8 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using RegistrationFormGenerator.Library;
+using static RegistrationFormGenerator.Enums;
+using System.Windows.Controls;
 
 namespace RegistrationFormGenerator
 {
@@ -18,7 +19,73 @@ namespace RegistrationFormGenerator
     {
         public MainWindow()
         {
+            if (Properties.Settings.Default.FirstRun == false)
+            {
+                Properties.Settings.Default.FirstRun = true;
+
+                Properties.Settings.Default.FacultyName = FacultyName.AccountingAndInformation;
+
+                Properties.Settings.Default.BengaliTextAccountingAndInformation = Properties.Resources.BengaliTextAccountingAndInformation;
+                Properties.Settings.Default.EnglishTextAccountingAndInformation = Properties.Resources.EnglishTextAccountingAndInformation;
+
+                Properties.Settings.Default.BengaliTextBangla = Properties.Resources.BengaliTextBangla;
+                Properties.Settings.Default.EnglishTextBangla = Properties.Resources.EnglishTextBangla;
+
+                Properties.Settings.Default.BengaliTextBotany = Properties.Resources.BengaliTextBotany;
+                Properties.Settings.Default.EnglishTextBotany = Properties.Resources.EnglishTextBotany;
+
+                Properties.Settings.Default.BengaliTextLaw = Properties.Resources.BengaliTextLaw;
+                Properties.Settings.Default.EnglishTextLaw = Properties.Resources.EnglishTextLaw;
+
+                Properties.Settings.Default.BengaliTextMathematics = Properties.Resources.BengaliTextMathematics;
+                Properties.Settings.Default.EnglishTextMathematics = Properties.Resources.EnglishTextMathematics;
+
+                Properties.Settings.Default.BengaliTextSociology = Properties.Resources.BengaliTextSociology;
+                Properties.Settings.Default.EnglishTextSociology = Properties.Resources.EnglishTextSociology;
+
+                Properties.Settings.Default.Save();
+            }
+            else
+            {
+                Properties.Settings.Default.FacultyName = FacultyName.AccountingAndInformation;
+            }
+
             InitializeComponent();
+
+            //Set Config
+            switch (Properties.Settings.Default.FacultyName)
+            {
+                case FacultyName.AccountingAndInformation:
+                    RadioAccountingAndInformation.IsChecked = true;
+                    BengaliText.Text = Properties.Settings.Default.BengaliTextAccountingAndInformation;
+                    EnglishText.Text = Properties.Settings.Default.EnglishTextAccountingAndInformation;
+                    break;
+                case FacultyName.Bangla:
+                    RadioBangla.IsChecked = true;
+                    BengaliText.Text = Properties.Settings.Default.BengaliTextBangla;
+                    EnglishText.Text = Properties.Settings.Default.EnglishTextBangla;
+                    break;
+                case FacultyName.Botany:
+                    RadioBotany.IsChecked = true;
+                    BengaliText.Text = Properties.Settings.Default.BengaliTextBotany;
+                    EnglishText.Text = Properties.Settings.Default.EnglishTextBotany;
+                    break;
+                case FacultyName.Law:
+                    RadioLaw.IsChecked = true;
+                    BengaliText.Text = Properties.Settings.Default.BengaliTextLaw;
+                    EnglishText.Text = Properties.Settings.Default.EnglishTextLaw;
+                    break;
+                case FacultyName.Mathematics:
+                    RadioMathematics.IsChecked = true;
+                    BengaliText.Text = Properties.Settings.Default.BengaliTextMathematics;
+                    EnglishText.Text = Properties.Settings.Default.EnglishTextMathematics;
+                    break;
+                case FacultyName.Sociology:
+                    RadioSociology.IsChecked = true;
+                    BengaliText.Text = Properties.Settings.Default.BengaliTextSociology;
+                    EnglishText.Text = Properties.Settings.Default.EnglishTextSociology;
+                    break;
+            }
         }
 
         private void ButtonChooseExcelFile_Click(object sender, RoutedEventArgs e)
@@ -110,6 +177,49 @@ namespace RegistrationFormGenerator
                       p.Extension.Equals(ext, StringComparison.CurrentCultureIgnoreCase))
                       .ToArray());
             return list;
+        }
+
+        private void FacultyChanged(object sender, RoutedEventArgs e)
+        {
+            RadioButton button = sender as RadioButton;
+
+            switch (button.Name)
+            {
+                case "RadioAccountingAndInformation":
+                    Properties.Settings.Default.FacultyName = FacultyName.AccountingAndInformation;
+                    BengaliText.Text = Properties.Settings.Default.BengaliTextAccountingAndInformation;
+                    EnglishText.Text = Properties.Settings.Default.EnglishTextAccountingAndInformation;
+                    break;
+                case "RadioBangla":
+                    RadioBangla.IsChecked = true;
+                    BengaliText.Text = Properties.Settings.Default.BengaliTextBangla;
+                    EnglishText.Text = Properties.Settings.Default.EnglishTextBangla;
+                    break;
+                case "RadioBotany":
+                    RadioBotany.IsChecked = true;
+                    BengaliText.Text = Properties.Settings.Default.BengaliTextBotany;
+                    EnglishText.Text = Properties.Settings.Default.EnglishTextBotany;
+                    break;
+                case "RadioLaw":
+                    RadioLaw.IsChecked = true;
+                    BengaliText.Text = Properties.Settings.Default.BengaliTextLaw;
+                    EnglishText.Text = Properties.Settings.Default.EnglishTextLaw;
+                    break;
+                case "RadioMathematics":
+                    RadioMathematics.IsChecked = true;
+                    BengaliText.Text = Properties.Settings.Default.BengaliTextMathematics;
+                    EnglishText.Text = Properties.Settings.Default.EnglishTextMathematics;
+                    break;
+                case "RadioSociology":
+                    RadioSociology.IsChecked = true;
+                    BengaliText.Text = Properties.Settings.Default.BengaliTextSociology;
+                    EnglishText.Text = Properties.Settings.Default.EnglishTextSociology;
+                    break;
+                default:
+                    // ... Display button content as title.
+                    this.Title = button.Content.ToString();
+                    break;
+            }
         }
     }
 }

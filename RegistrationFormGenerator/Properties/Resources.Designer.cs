@@ -19,7 +19,7 @@ namespace RegistrationFormGenerator.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -57,6 +57,114 @@ namespace RegistrationFormGenerator.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to বরিশাল বিশ্ববিদ্যালয়ে  ২০১৬-১৭ শিক্ষাবর্ষে উল্লেখিত বিভাগ এর ব্যাচেলর অফ বিজনেস এডমিনিস্ট্রেশন (বি. বি. এ.) পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।.
+        /// </summary>
+        internal static string BengaliTextAccountingAndInformation {
+            get {
+                return ResourceManager.GetString("BengaliTextAccountingAndInformation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to বরিশাল বিশ্ববিদ্যালয়ে  ২০১৬-১৭ শিক্ষাবর্ষে উল্লেখিত বিভাগ এর ব্যাচেলর অফ আর্টস (বি এ) পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।.
+        /// </summary>
+        internal static string BengaliTextBangla {
+            get {
+                return ResourceManager.GetString("BengaliTextBangla", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to বরিশাল বিশ্ববিদ্যালয়ে  ২০১৬-১৭ শিক্ষাবর্ষে উল্লেখিত বিভাগ এর ব্যাচেলর অফ সাইন্স (বি এস) পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।.
+        /// </summary>
+        internal static string BengaliTextBotany {
+            get {
+                return ResourceManager.GetString("BengaliTextBotany", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to বরিশাল বিশ্ববিদ্যালয়ে  ২০১৬-১৭ শিক্ষাবর্ষে উল্লেখিত বিভাগ এর ব্যাচেলর অফ ল (এল এল বি) পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।.
+        /// </summary>
+        internal static string BengaliTextLaw {
+            get {
+                return ResourceManager.GetString("BengaliTextLaw", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to বরিশাল বিশ্ববিদ্যালয়ে  ২০১৬-১৭ শিক্ষাবর্ষে উল্লেখিত বিভাগ এর ব্যাচেলর অফ সাইন্স (বি এস) পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।.
+        /// </summary>
+        internal static string BengaliTextMathematics {
+            get {
+                return ResourceManager.GetString("BengaliTextMathematics", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to বরিশাল বিশ্ববিদ্যালয়ে  ২০১৬-১৭ শিক্ষাবর্ষে উল্লেখিত বিভাগ এর ব্যাচেলর অফ সোশ্যাল সাইন্স (বি এস এস) পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।.
+        /// </summary>
+        internal static string BengaliTextSociology {
+            get {
+                return ResourceManager.GetString("BengaliTextSociology", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The above mentioned student is admitted in the Bachelor of Business Administration (B.B.A.) Program of mentioned Department in the 2016-17 academic year and he is registered as a student of the university..
+        /// </summary>
+        internal static string EnglishTextAccountingAndInformation {
+            get {
+                return ResourceManager.GetString("EnglishTextAccountingAndInformation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The above mentioned student is admitted in the Bachelor of Bachelor of Arts (B.A.) Program of mentioned Department in the 2016-17 academic year and he is registered as a student of the university..
+        /// </summary>
+        internal static string EnglishTextBangla {
+            get {
+                return ResourceManager.GetString("EnglishTextBangla", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The above mentioned student is admitted in the Bachelor of Science (B.S.) Program of mentioned Department in the 2016-17 academic year and he is registered as a student of the university..
+        /// </summary>
+        internal static string EnglishTextBotany {
+            get {
+                return ResourceManager.GetString("EnglishTextBotany", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The above mentioned student is admitted in the Bachelor of Law (L.L.B.) Program of mentioned Department in the 2016-17 academic year and he is registered as a student of the university..
+        /// </summary>
+        internal static string EnglishTextLaw {
+            get {
+                return ResourceManager.GetString("EnglishTextLaw", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The above mentioned student is admitted in the Bachelor of Science (B.S.) Program of mentioned Department in the 2016-17 academic year and he is registered as a student of the university..
+        /// </summary>
+        internal static string EnglishTextMathematics {
+            get {
+                return ResourceManager.GetString("EnglishTextMathematics", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The above mentioned student is admitted in the Bachelor of Social Science (B.S.S.) Program of mentioned Department in the 2016-17 academic year and he is registered as a student of the university..
+        /// </summary>
+        internal static string EnglishTextSociology {
+            get {
+                return ResourceManager.GetString("EnglishTextSociology", resourceCulture);
             }
         }
         

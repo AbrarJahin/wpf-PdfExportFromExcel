@@ -9,12 +9,9 @@
 //------------------------------------------------------------------------------
 
 namespace RegistrationFormGenerator.Properties {
-    
-    
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.0.1.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
         
         public static Settings Default {
@@ -22,5 +19,20 @@ namespace RegistrationFormGenerator.Properties {
                 return defaultInstance;
             }
         }
+
+        public Enums.FacultyName FacultyName { get; internal set; }
+        public string BengaliTextAccountingAndInformation { get; internal set; }
+        public string EnglishTextAccountingAndInformation { get; internal set; }
+        public string BengaliTextBangla { get; internal set; }
+        public string EnglishTextBangla { get; internal set; }
+        public string BengaliTextBotany { get; internal set; }
+        public string EnglishTextBotany { get; internal set; }
+        public string BengaliTextLaw { get; internal set; }
+        public string EnglishTextLaw { get; internal set; }
+        public string BengaliTextMathematics { get; internal set; }
+        public string EnglishTextMathematics { get; internal set; }
+        public string BengaliTextSociology { get; internal set; }
+        public string EnglishTextSociology { get; internal set; }
+        public bool FirstRun { get; internal set; }
     }
 }
