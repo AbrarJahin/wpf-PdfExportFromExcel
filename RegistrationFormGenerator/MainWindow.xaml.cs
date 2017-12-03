@@ -17,6 +17,7 @@ namespace RegistrationFormGenerator
     /// </summary>
     public partial class MainWindow : Window
     {
+        bool _locker = false;
         public MainWindow()
         {
             if (Properties.Settings.Default.FirstRun == false)
@@ -44,10 +45,6 @@ namespace RegistrationFormGenerator
                 Properties.Settings.Default.EnglishTextSociology = Properties.Resources.EnglishTextSociology;
 
                 Properties.Settings.Default.Save();
-            }
-            else
-            {
-                Properties.Settings.Default.FacultyName = FacultyName.AccountingAndInformation;
             }
 
             InitializeComponent();
@@ -181,6 +178,7 @@ namespace RegistrationFormGenerator
 
         private void FacultyChanged(object sender, RoutedEventArgs e)
         {
+            _locker = true;
             RadioButton button = sender as RadioButton;
 
             switch (button.Name)
@@ -220,6 +218,47 @@ namespace RegistrationFormGenerator
                     this.Title = button.Content.ToString();
                     break;
             }
+            _locker = false;
+        }
+
+        private void TemplateTextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (_locker)
+                return;
+            // ... Get control that raised this event.
+            TextBox textBox = sender as TextBox;
+
+            switch (Properties.Settings.Default.FacultyName)
+            {
+                case FacultyName.AccountingAndInformation:
+                    Properties.Settings.Default.BengaliTextAccountingAndInformation = BengaliText.Text;
+                    Properties.Settings.Default.EnglishTextAccountingAndInformation = EnglishText.Text;
+                    break;
+                case FacultyName.Bangla:
+                    Properties.Settings.Default.BengaliTextBangla = BengaliText.Text;
+                    Properties.Settings.Default.EnglishTextBangla = EnglishText.Text;
+                    break;
+                case FacultyName.Botany:
+                    Properties.Settings.Default.BengaliTextBotany = BengaliText.Text;
+                    Properties.Settings.Default.EnglishTextBotany = EnglishText.Text;
+                    break;
+                case FacultyName.Law:
+                    Properties.Settings.Default.BengaliTextLaw = BengaliText.Text;
+                    Properties.Settings.Default.EnglishTextLaw = EnglishText.Text;
+                    break;
+                case FacultyName.Mathematics:
+                    Properties.Settings.Default.BengaliTextMathematics = BengaliText.Text;
+                    Properties.Settings.Default.EnglishTextMathematics = EnglishText.Text;
+                    break;
+                case FacultyName.Sociology:
+                    Properties.Settings.Default.BengaliTextSociology = BengaliText.Text;
+                    Properties.Settings.Default.EnglishTextSociology = EnglishText.Text;
+                    break;
+                default:
+                    this.Title = textBox.Name.ToString();
+                    break;
+            }
+            Properties.Settings.Default.Save();
         }
     }
 }

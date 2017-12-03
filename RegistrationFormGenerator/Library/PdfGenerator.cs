@@ -1,5 +1,8 @@
 ﻿using HtmlAgilityPack;
+using System;
 using System.IO;
+using System.Windows;
+using static RegistrationFormGenerator.Enums;
 
 namespace RegistrationFormGenerator.Library
 {
@@ -84,6 +87,34 @@ namespace RegistrationFormGenerator.Library
             HtmlDocument htmlDocument = new HtmlDocument();
             htmlDocument.LoadHtml(htmlTemplate);
 
+            //Update Bengali And English Text
+            switch (Properties.Settings.Default.FacultyName)
+            {
+                case FacultyName.AccountingAndInformation:
+                    htmlDocument.GetElementbyId("BengaliText").InnerHtml = Properties.Settings.Default.BengaliTextAccountingAndInformation;
+                    htmlDocument.GetElementbyId("EnglishText").InnerHtml = Properties.Settings.Default.EnglishTextAccountingAndInformation;
+                    break;
+                case FacultyName.Bangla:
+                    htmlDocument.GetElementbyId("BengaliText").InnerHtml = Properties.Settings.Default.BengaliTextBangla;
+                    htmlDocument.GetElementbyId("EnglishText").InnerHtml = Properties.Settings.Default.EnglishTextBangla;
+                    break;
+                case FacultyName.Botany:
+                    htmlDocument.GetElementbyId("BengaliText").InnerHtml = Properties.Settings.Default.BengaliTextBotany;
+                    htmlDocument.GetElementbyId("EnglishText").InnerHtml = Properties.Settings.Default.EnglishTextBotany;
+                    break;
+                case FacultyName.Law:
+                    htmlDocument.GetElementbyId("BengaliText").InnerHtml = Properties.Settings.Default.BengaliTextLaw;
+                    htmlDocument.GetElementbyId("EnglishText").InnerHtml = Properties.Settings.Default.EnglishTextLaw;
+                    break;
+                case FacultyName.Mathematics:
+                    htmlDocument.GetElementbyId("BengaliText").InnerHtml = Properties.Settings.Default.BengaliTextMathematics;
+                    htmlDocument.GetElementbyId("EnglishText").InnerHtml = Properties.Settings.Default.EnglishTextMathematics;
+                    break;
+                case FacultyName.Sociology:
+                    htmlDocument.GetElementbyId("BengaliText").InnerHtml = Properties.Settings.Default.BengaliTextSociology;
+                    htmlDocument.GetElementbyId("EnglishText").InnerHtml = Properties.Settings.Default.EnglishTextSociology;
+                    break;
+            }
             //Update html
             htmlDocument.GetElementbyId("RegistrationNo").InnerHtml = data.RegistrationNo;
 
@@ -95,25 +126,32 @@ namespace RegistrationFormGenerator.Library
             htmlDocument.GetElementbyId("FatherNameEnglish").InnerHtml = data.FatherNameEnglish;
             htmlDocument.GetElementbyId("MotherNameBengali").InnerHtml = data.MotherNameBengali;
             htmlDocument.GetElementbyId("MotherNameEnglish").InnerHtml = data.MotherNameEnglish;
-            htmlDocument.GetElementbyId("SessionBengali").InnerHtml = data.SessionBengali;
 
-            htmlDocument.GetElementbyId("SessionBengali").InnerHtml = data.SessionBengali;
-            htmlDocument.GetElementbyId("SessionEnglish").InnerHtml = data.SessionEnglish;
+            //htmlDocument.GetElementbyId("FacultyBengali").InnerHtml = data.DegreeNameBengali;
+            //htmlDocument.GetElementbyId("FacultyEnglish").InnerHtml = data.DegreeNameEnglish;
 
-            htmlDocument.GetElementbyId("FacultyBengali").InnerHtml = data.DegreeNameBengali;
-            htmlDocument.GetElementbyId("FacultyEnglish").InnerHtml = data.DegreeNameEnglish;
-
-            htmlDocument.GetElementbyId("DepertmentBengali").InnerHtml = data.DepertmentBengali;
-            htmlDocument.GetElementbyId("DepertmentEnglish").InnerHtml = data.DepertmentEnglish;
+            //htmlDocument.GetElementbyId("DepertmentBengali").InnerHtml = data.DepertmentBengali;
+            //htmlDocument.GetElementbyId("DepertmentEnglish").InnerHtml = data.DepertmentEnglish;
 
             htmlDocument.GetElementbyId("DepertmentBengaliTable").InnerHtml = data.DepertmentBengali;
             htmlDocument.GetElementbyId("DepertmentEnglishTable").InnerHtml = data.DepertmentEnglish;
 
-            htmlDocument.GetElementbyId("DegreeNameBengali").InnerHtml = data.DegreeNameEnglish;
-            htmlDocument.GetElementbyId("DegreeNameEnglish").InnerHtml = data.DegreeNameEnglish;
-
             htmlDocument.GetElementbyId("RollNo").InnerHtml = data.RollNo;
+            /*
+            try
+            {
+                //Not Needed Now
+                htmlDocument.GetElementbyId("DegreeNameBengali").InnerHtml = data.DegreeNameEnglish;
+                htmlDocument.GetElementbyId("DegreeNameEnglish").InnerHtml = data.DegreeNameEnglish;
 
+                htmlDocument.GetElementbyId("SessionBengali").InnerHtml = data.SessionBengali;
+                htmlDocument.GetElementbyId("SessionEnglish").InnerHtml = data.SessionEnglish;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            */
             return htmlDocument.DocumentNode.OuterHtml;
         }
     }
