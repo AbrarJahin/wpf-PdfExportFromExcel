@@ -61,7 +61,7 @@ namespace RegistrationFormGenerator.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to বরিশাল বিশ্ববিদ্যালয়ে  ২০১৬-১৭ শিক্ষাবর্ষে উল্লেখিত বিভাগ এর ব্যাচেলর অফ বিজনেস এডমিনিস্ট্রেশন (বি. বি. এ.) পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।.
+        ///   Looks up a localized string similar to বরিশাল বিশ্ববিদ্যালয়ে  &lt;span id=&quot;SessionBengali&quot;&gt;২০১৬-১৭&lt;/span&gt; শিক্ষাবর্ষে উল্লেখিত বিভাগ এর &lt;span id=&quot;DegreeNameBengali&quot;&gt;ব্যাচেলর অফ বিজনেস এডমিনিস্ট্রেশন (বি. বি. এ.)&lt;/span&gt; পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।.
         /// </summary>
         internal static string BengaliTextAccountingAndInformation {
             get {
@@ -70,7 +70,7 @@ namespace RegistrationFormGenerator.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to বরিশাল বিশ্ববিদ্যালয়ে  ২০১৬-১৭ শিক্ষাবর্ষে উল্লেখিত বিভাগ এর ব্যাচেলর অফ আর্টস (বি এ) পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।.
+        ///   Looks up a localized string similar to বরিশাল বিশ্ববিদ্যালয়ে  &lt;span id=&quot;SessionBengali&quot;&gt;২০১৬-১৭&lt;/span&gt; শিক্ষাবর্ষে উল্লেখিত বিভাগ এর &lt;span id=&quot;DegreeNameBengali&quot;&gt;ব্যাচেলর অফ আর্টস (বি এ)&lt;/span&gt; পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।.
         /// </summary>
         internal static string BengaliTextBangla {
             get {
@@ -79,7 +79,7 @@ namespace RegistrationFormGenerator.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to বরিশাল বিশ্ববিদ্যালয়ে  ২০১৬-১৭ শিক্ষাবর্ষে উল্লেখিত বিভাগ এর ব্যাচেলর অফ সাইন্স (বি এস) পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।.
+        ///   Looks up a localized string similar to বরিশাল বিশ্ববিদ্যালয়ে  &lt;span id=&quot;SessionBengali&quot;&gt;২০১৬-১৭&lt;/span&gt; শিক্ষাবর্ষে উল্লেখিত বিভাগ এর &lt;span id=&quot;DegreeNameBengali&quot;&gt;ব্যাচেলর অফ সাইন্স (বি এস)&lt;/span&gt; পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।.
         /// </summary>
         internal static string BengaliTextBotany {
             get {
@@ -88,7 +88,7 @@ namespace RegistrationFormGenerator.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to বরিশাল বিশ্ববিদ্যালয়ে  ২০১৬-১৭ শিক্ষাবর্ষে উল্লেখিত বিভাগ এর ব্যাচেলর অফ ল (এল এল বি) পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।.
+        ///   Looks up a localized string similar to বরিশাল বিশ্ববিদ্যালয়ে  &lt;span id=&quot;SessionBengali&quot;&gt;২০১৬-১৭&lt;/span&gt; শিক্ষাবর্ষে উল্লেখিত বিভাগ এর &lt;span id=&quot;DegreeNameBengali&quot;&gt;ব্যাচেলর অফ ল (এল এল বি)&lt;/span&gt; পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।.
         /// </summary>
         internal static string BengaliTextLaw {
             get {
@@ -97,7 +97,7 @@ namespace RegistrationFormGenerator.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to বরিশাল বিশ্ববিদ্যালয়ে  ২০১৬-১৭ শিক্ষাবর্ষে উল্লেখিত বিভাগ এর ব্যাচেলর অফ সাইন্স (বি এস) পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।.
+        ///   Looks up a localized string similar to বরিশাল বিশ্ববিদ্যালয়ে  &lt;span id=&quot;SessionBengali&quot;&gt;২০১৬-১৭&lt;/span&gt; শিক্ষাবর্ষে উল্লেখিত বিভাগ এর &lt;span id=&quot;DegreeNameBengali&quot;&gt;ব্যাচেলর অফ সাইন্স (বি এস)&lt;/span&gt; পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।.
         /// </summary>
         internal static string BengaliTextMathematics {
             get {
@@ -106,7 +106,7 @@ namespace RegistrationFormGenerator.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to বরিশাল বিশ্ববিদ্যালয়ে  ২০১৬-১৭ শিক্ষাবর্ষে উল্লেখিত বিভাগ এর ব্যাচেলর অফ সোশ্যাল সাইন্স (বি এস এস) পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।.
+        ///   Looks up a localized string similar to বরিশাল বিশ্ববিদ্যালয়ে  &lt;span id=&quot;SessionBengali&quot;&gt;২০১৬-১৭&lt;/span&gt; শিক্ষাবর্ষে উল্লেখিত বিভাগ এর &lt;span id=&quot;DegreeNameBengali&quot;&gt;ব্যাচেলর অফ সোশ্যাল সাইন্স (বি এস এস)&lt;/span&gt; পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।.
         /// </summary>
         internal static string BengaliTextSociology {
             get {
@@ -115,7 +115,7 @@ namespace RegistrationFormGenerator.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The above mentioned student is admitted in the Bachelor of Business Administration (B.B.A.) Program of mentioned Department in the 2016-17 academic year and he is registered as a student of the university..
+        ///   Looks up a localized string similar to The above mentioned student is admitted in the &lt;span id=&quot;DegreeNameEnglish&quot;&gt;Bachelor of Business Administration (B.B.A.)&lt;/span&gt; Program of mentioned Department in the &lt;span id=&quot;SessionEnglish&quot;&gt;2016-17&lt;/span&gt; academic year and he is registered as a student of the university..
         /// </summary>
         internal static string EnglishTextAccountingAndInformation {
             get {
@@ -124,7 +124,7 @@ namespace RegistrationFormGenerator.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The above mentioned student is admitted in the Bachelor of Bachelor of Arts (B.A.) Program of mentioned Department in the 2016-17 academic year and he is registered as a student of the university..
+        ///   Looks up a localized string similar to The above mentioned student is admitted in the &lt;span id=&quot;DegreeNameEnglish&quot;&gt;Bachelor of Bachelor of Arts (B.A.)&lt;/span&gt; Program of mentioned Department in the &lt;span id=&quot;SessionEnglish&quot;&gt;2016-17&lt;/span&gt; academic year and he is registered as a student of the university..
         /// </summary>
         internal static string EnglishTextBangla {
             get {
@@ -133,7 +133,7 @@ namespace RegistrationFormGenerator.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The above mentioned student is admitted in the Bachelor of Science (B.S.) Program of mentioned Department in the 2016-17 academic year and he is registered as a student of the university..
+        ///   Looks up a localized string similar to The above mentioned student is admitted in the &lt;span id=&quot;DegreeNameEnglish&quot;&gt;Bachelor of Science (B.S.)&lt;/span&gt; Program of mentioned Department in the &lt;span id=&quot;SessionEnglish&quot;&gt;2016-17&lt;/span&gt; academic year and he is registered as a student of the university..
         /// </summary>
         internal static string EnglishTextBotany {
             get {
@@ -142,7 +142,7 @@ namespace RegistrationFormGenerator.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The above mentioned student is admitted in the Bachelor of Law (L.L.B.) Program of mentioned Department in the 2016-17 academic year and he is registered as a student of the university..
+        ///   Looks up a localized string similar to The above mentioned student is admitted in the &lt;span id=&quot;DegreeNameEnglish&quot;&gt;Bachelor of Law (L.L.B.)&lt;/span&gt; Program of mentioned Department in the &lt;span id=&quot;SessionEnglish&quot;&gt;2016-17&lt;/span&gt; academic year and he is registered as a student of the university..
         /// </summary>
         internal static string EnglishTextLaw {
             get {
@@ -151,7 +151,7 @@ namespace RegistrationFormGenerator.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The above mentioned student is admitted in the Bachelor of Science (B.S.) Program of mentioned Department in the 2016-17 academic year and he is registered as a student of the university..
+        ///   Looks up a localized string similar to The above mentioned student is admitted in the &lt;span id=&quot;DegreeNameEnglish&quot;&gt;Bachelor of Science (B.S.)&lt;/span&gt; Program of mentioned Department in the &lt;span id=&quot;SessionEnglish&quot;&gt;2016-17&lt;/span&gt; academic year and he is registered as a student of the university..
         /// </summary>
         internal static string EnglishTextMathematics {
             get {
@@ -160,7 +160,7 @@ namespace RegistrationFormGenerator.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The above mentioned student is admitted in the Bachelor of Social Science (B.S.S.) Program of mentioned Department in the 2016-17 academic year and he is registered as a student of the university..
+        ///   Looks up a localized string similar to The above mentioned student is admitted in the &lt;span id=&quot;DegreeNameEnglish&quot;&gt;Bachelor of Social Science (B.S.S.)&lt;/span&gt; Program of mentioned Department in the &lt;span id=&quot;SessionEnglish&quot;&gt;2016-17&lt;/span&gt; academic year and he is registered as a student of the university..
         /// </summary>
         internal static string EnglishTextSociology {
             get {
