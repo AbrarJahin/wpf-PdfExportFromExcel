@@ -3,12 +3,12 @@
     class Enums
     {
         public enum FacultyName {
-                    AccountingAndInformation = 0,
-                    Bangla,
-                    Botany,
+                    BusinessStudies = 0,
+                    ArtsandHumanities,
+                    BioScience,
                     Law,
-                    Mathematics,
-                    Sociology
+                    ScienceAndEngineering,
+                    SocialSciences
                 };
     }
 }

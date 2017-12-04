@@ -109,9 +109,9 @@
             Width="87"
             Height="25" Click="ButtonGenerate_Click"/>
 
-        <RadioButton GroupName="FacultyName" x:Name="RadioAccountingAndInformation" Content="Business Studies" HorizontalAlignment="Left" Margin="119,133,0,0" VerticalAlignment="Top" Checked="FacultyChanged" />
         <RadioButton GroupName="FacultyName" x:Name="RadioBangla" Content="Arts and Humanities" HorizontalAlignment="Left" Margin="119,93,0,0" VerticalAlignment="Top" Checked="FacultyChanged" />
         <RadioButton GroupName="FacultyName" x:Name="RadioBotany" Content="Bio-Sciences" HorizontalAlignment="Left" Margin="119,113,0,0" VerticalAlignment="Top" Checked="FacultyChanged" />
+        <RadioButton GroupName="FacultyName" x:Name="RadioAccountingAndInformation" Content="Business Studies" HorizontalAlignment="Left" Margin="119,133,0,0" VerticalAlignment="Top" Checked="FacultyChanged" />
         <RadioButton GroupName="FacultyName" x:Name="RadioLaw" Content="Law" HorizontalAlignment="Left" Margin="119,153,0,0" VerticalAlignment="Top" Checked="FacultyChanged" />
         <RadioButton GroupName="FacultyName" x:Name="RadioMathematics" Content="Science and Engineering" HorizontalAlignment="Left" Margin="119,173,0,0" VerticalAlignment="Top" Checked="FacultyChanged" />
         <RadioButton GroupName="FacultyName" x:Name="RadioSociology" Content="Social Sciences" HorizontalAlignment="Left" Margin="119,193,0,0" VerticalAlignment="Top" Checked="FacultyChanged" />

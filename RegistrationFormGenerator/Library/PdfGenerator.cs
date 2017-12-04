@@ -90,15 +90,15 @@ namespace RegistrationFormGenerator.Library
             //Update Bengali And English Text
             switch (Properties.Settings.Default.FacultyName)
             {
-                case FacultyName.AccountingAndInformation:
+                case FacultyName.BusinessStudies:
                     htmlDocument.GetElementbyId("BengaliText").InnerHtml = Properties.Settings.Default.BengaliTextAccountingAndInformation;
                     htmlDocument.GetElementbyId("EnglishText").InnerHtml = Properties.Settings.Default.EnglishTextAccountingAndInformation;
                     break;
-                case FacultyName.Bangla:
+                case FacultyName.ArtsandHumanities:
                     htmlDocument.GetElementbyId("BengaliText").InnerHtml = Properties.Settings.Default.BengaliTextBangla;
                     htmlDocument.GetElementbyId("EnglishText").InnerHtml = Properties.Settings.Default.EnglishTextBangla;
                     break;
-                case FacultyName.Botany:
+                case FacultyName.BioScience:
                     htmlDocument.GetElementbyId("BengaliText").InnerHtml = Properties.Settings.Default.BengaliTextBotany;
                     htmlDocument.GetElementbyId("EnglishText").InnerHtml = Properties.Settings.Default.EnglishTextBotany;
                     break;
@@ -106,11 +106,11 @@ namespace RegistrationFormGenerator.Library
                     htmlDocument.GetElementbyId("BengaliText").InnerHtml = Properties.Settings.Default.BengaliTextLaw;
                     htmlDocument.GetElementbyId("EnglishText").InnerHtml = Properties.Settings.Default.EnglishTextLaw;
                     break;
-                case FacultyName.Mathematics:
+                case FacultyName.ScienceAndEngineering:
                     htmlDocument.GetElementbyId("BengaliText").InnerHtml = Properties.Settings.Default.BengaliTextMathematics;
                     htmlDocument.GetElementbyId("EnglishText").InnerHtml = Properties.Settings.Default.EnglishTextMathematics;
                     break;
-                case FacultyName.Sociology:
+                case FacultyName.SocialSciences:
                     htmlDocument.GetElementbyId("BengaliText").InnerHtml = Properties.Settings.Default.BengaliTextSociology;
                     htmlDocument.GetElementbyId("EnglishText").InnerHtml = Properties.Settings.Default.EnglishTextSociology;
                     break;
@@ -137,6 +137,9 @@ namespace RegistrationFormGenerator.Library
             htmlDocument.GetElementbyId("DepertmentEnglishTable").InnerHtml = data.DepertmentEnglish;
 
             htmlDocument.GetElementbyId("RollNo").InnerHtml = data.RollNo;
+
+            htmlDocument.GetElementbyId("ChairmanDepertmentBengali").InnerHtml = data.DepertmentBengali;
+            htmlDocument.GetElementbyId("ChairmanDepertmentEnglish").InnerHtml = data.DepertmentEnglish;
             /*
             try
             {
