@@ -6,7 +6,7 @@
         xmlns:adorners="http://gu.se/Adorners"
         mc:Ignorable="d"
         ResizeMode="NoResize"
-        Title="Registration Card Generator" Height="414.4" Width="525">
+        Title="Registration Card Generator" Height="479.4" Width="517.5">
 
     <Grid>
         <Label
@@ -84,17 +84,16 @@
             Width="87" Click="ButtonOutputFolder_Click" Height="23"/>
         <TextBlock
             HorizontalAlignment="Left"
-            Margin="10,354,0,0"
+            Margin="10,370,0,0"
             TextWrapping="Wrap"
-            Text="** Image should be .jpg file and Names should be same as Serial in Excel File"
             VerticalAlignment="Top"
             Foreground="Red"
-            Width="407"/>
+            Width="407" Height="70"><Run Text="* Image should be .jpg file and Names should be same as Serial in Excel File"/><LineBreak/><Run Text="* &quot;Template Auto Select Code (Check in Software)&quot; should have number from 1-6 if you like to select faculty automatically from Excel file, leave empty otherwise"/></TextBlock>
         <ProgressBar
             x:Name="ProgressPdfCreatePercenage"
             HorizontalAlignment="Left"
-            Height="25"
-            Margin="0,350,0,0"
+            Height="69"
+            Margin="-5,371,0,0"
             VerticalAlignment="Top"
             Width="422"
             Value="0"
@@ -104,40 +103,40 @@
             x:Name="ButtonGenerate"
             Content="Generate"
             HorizontalAlignment="Left"
-            Margin="422,350,0,0"
+            Margin="422,371,0,0"
             VerticalAlignment="Top"
-            Width="87"
-            Height="25" Click="ButtonGenerate_Click"/>
+            Width="80"
+            Height="69" Click="ButtonGenerate_Click"/>
 
-        <RadioButton GroupName="FacultyName" x:Name="RadioArtsAndHumanities" Content="Arts and Humanities" HorizontalAlignment="Left" Margin="119,93,0,0" VerticalAlignment="Top" Checked="FacultyChanged" />
-        <RadioButton GroupName="FacultyName" x:Name="RadioBioSciences" Content="Bio-Sciences" HorizontalAlignment="Left" Margin="119,113,0,0" VerticalAlignment="Top" Checked="FacultyChanged" />
-        <RadioButton GroupName="FacultyName" x:Name="RadioBusinessStudies" Content="Business Studies" HorizontalAlignment="Left" Margin="119,133,0,0" VerticalAlignment="Top" Checked="FacultyChanged" />
-        <RadioButton GroupName="FacultyName" x:Name="RadioLaw" Content="Law" HorizontalAlignment="Left" Margin="119,153,0,0" VerticalAlignment="Top" Checked="FacultyChanged" />
-        <RadioButton GroupName="FacultyName" x:Name="RadioScienceAndEngineering" Content="Science and Engineering" HorizontalAlignment="Left" Margin="119,173,0,0" VerticalAlignment="Top" Checked="FacultyChanged" />
-        <RadioButton GroupName="FacultyName" x:Name="RadioSocialSciences" Content="Social Sciences" HorizontalAlignment="Left" Margin="119,193,0,0" VerticalAlignment="Top" Checked="FacultyChanged" />
+        <RadioButton GroupName="FacultyName" x:Name="RadioArtsAndHumanities" Content="1. Arts and Humanities" HorizontalAlignment="Left" Margin="119,93,0,0" VerticalAlignment="Top" Checked="FacultyChanged" />
+        <RadioButton GroupName="FacultyName" x:Name="RadioBioSciences" Content="2. Bio-Sciences" HorizontalAlignment="Left" Margin="119,113,0,0" VerticalAlignment="Top" Checked="FacultyChanged" />
+        <RadioButton GroupName="FacultyName" x:Name="RadioBusinessStudies" Content="3. Business Studies" HorizontalAlignment="Left" Margin="119,133,0,0" VerticalAlignment="Top" Checked="FacultyChanged" />
+        <RadioButton GroupName="FacultyName" x:Name="RadioLaw" Content="4. Law" HorizontalAlignment="Left" Margin="119,153,0,0" VerticalAlignment="Top" Checked="FacultyChanged" />
+        <RadioButton GroupName="FacultyName" x:Name="RadioScienceAndEngineering" Content="5. Science and Engineering" HorizontalAlignment="Left" Margin="119,173,0,0" VerticalAlignment="Top" Checked="FacultyChanged" />
+        <RadioButton GroupName="FacultyName" x:Name="RadioSocialSciences" Content="6. Social Sciences" HorizontalAlignment="Left" Margin="119,193,0,0" VerticalAlignment="Top" Checked="FacultyChanged" />
 
         <TextBox
             x:Name="BengaliText"
             HorizontalAlignment="Left"
-            Height="67"
+            Height="75"
             Margin="10,210,0,0"
             TextWrapping="Wrap"
             VerticalAlignment="Top"
             Width="499"
-            adorners:Watermark.Text="Bengali Text"
+            adorners:Watermark.Text="বাংলা টেম্পলেট"
             TextChanged="TemplateTextChanged"/>
         <TextBox
             x:Name="EnglishText"
             HorizontalAlignment="Left"
-            Height="63"
-            Margin="10,282,0,0"
+            Height="75"
+            Margin="10,290,0,0"
             TextWrapping="Wrap"
             VerticalAlignment="Top"
             Width="499"
-            adorners:Watermark.Text="English Text"
+            adorners:Watermark.Text="English Template"
             TextChanged="TemplateTextChanged"/>
         <Label Content="Faculty" HorizontalAlignment="Left" Margin="10,113,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.674,-0.038" Width="104" FontSize="30" />
-        
+
     </Grid>
 
 </Window>

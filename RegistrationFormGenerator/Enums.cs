@@ -2,13 +2,14 @@
 {
     class Enums
     {
-        public enum FacultyName {
-                    BusinessStudies = 0,
-                    ArtsandHumanities,
-                    BioScience,
-                    Law,
-                    ScienceAndEngineering,
-                    SocialSciences
-                };
+        public enum FacultyName
+        {
+            ArtsandHumanities = 0,
+            BioScience,
+            BusinessStudies,
+            Law,
+            ScienceAndEngineering,
+            SocialSciences
+        };
     }
 }

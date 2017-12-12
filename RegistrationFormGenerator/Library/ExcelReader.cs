@@ -83,52 +83,61 @@ namespace RegistrationFormGenerator.Library
                                 row.SessionBengali = cellValue;
                                 break;
                             case 8:
-                                row.FatherNameBengali = cellValue;
+                                row.SessionEnglish = cellValue;
                                 break;
                             case 9:
-                                row.FatherNameEnglish = cellValue;
+                                row.FatherNameBengali = cellValue;
                                 break;
                             case 10:
-                                row.MotherNameBengali = cellValue;
+                                row.FatherNameEnglish = cellValue;
                                 break;
                             case 11:
-                                row.MotherNameEnglish = cellValue;
+                                row.MotherNameBengali = cellValue;
                                 break;
                             case 12:
-                                row.PresentAddress = cellValue;
+                                row.MotherNameEnglish = cellValue;
                                 break;
                             case 13:
-                                row.PermanentAddress = cellValue;
-                                break;
-                            case 14:
-                                row.FacultyBengali = cellValue;
-                                break;
-                            case 15:
-                                row.FacultyEnglish = cellValue;
-                                break;
-                            case 16:
-                                row.DepertmentBengali = cellValue;
-                                break;
-                            case 17:
-                                row.DepertmentEnglish = cellValue;
-                                break;
-                            case 18:
                                 row.MobileNo = cellValue;
                                 break;
+                            case 14:
+                                row.PresentAddress = cellValue;
+                                break;
+                            case 15:
+                                row.PermanentAddress = cellValue;
+                                break;
+                            case 16:
+                                int parsedInt = 0;
+                                if (int.TryParse(cellValue, out parsedInt))
+                                {
+                                    if(parsedInt<1 || parsedInt>6)
+                                        parsedInt = 0;
+                                }
+                                row.TemplateAutoSelectCode = parsedInt;
+                                break;
+                            case 17:
+                                row.FacultyBengali = cellValue;
+                                break;
+                            case 18:
+                                row.FacultyEnglish = cellValue;
+                                break;
                             case 19:
-                                row.DegreeNameBengali = cellValue;
+                                row.DepertmentBengali = cellValue;
                                 break;
                             case 20:
-                                row.DegreeNameEnglish = cellValue;
+                                row.DepertmentEnglish = cellValue;
                                 break;
                             case 21:
-                                row.AdmissionCancelled = cellValue;
+                                row.DegreeNameBengali = cellValue;
                                 break;
                             case 22:
-                                row.Comment = cellValue;
+                                row.DegreeNameEnglish = cellValue;
                                 break;
                             case 23:
-                                row.SessionEnglish = cellValue;
+                                row.AdmissionCancelled = cellValue;
+                                break;
+                            case 24:
+                                row.Comment = cellValue;
                                 break;
                             default:
                                 break;

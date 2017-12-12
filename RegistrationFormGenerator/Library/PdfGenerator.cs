@@ -88,6 +88,9 @@ namespace RegistrationFormGenerator.Library
             htmlDocument.LoadHtml(htmlTemplate);
 
             //////////////////////////Update Bengali And English Text According to User Given Template - Start
+            if (data.TemplateAutoSelectCode > 0)
+                Properties.Settings.Default.FacultyName = (FacultyName)(data.TemplateAutoSelectCode - 1);
+
             switch (Properties.Settings.Default.FacultyName)
             {
                 case FacultyName.BusinessStudies:
@@ -149,12 +152,6 @@ namespace RegistrationFormGenerator.Library
             htmlDocument.GetElementbyId("FatherNameEnglish").InnerHtml = data.FatherNameEnglish;
             htmlDocument.GetElementbyId("MotherNameBengali").InnerHtml = data.MotherNameBengali;
             htmlDocument.GetElementbyId("MotherNameEnglish").InnerHtml = data.MotherNameEnglish;
-
-            //htmlDocument.GetElementbyId("FacultyBengali").InnerHtml = data.DegreeNameBengali;
-            //htmlDocument.GetElementbyId("FacultyEnglish").InnerHtml = data.DegreeNameEnglish;
-
-            //htmlDocument.GetElementbyId("DepertmentBengali").InnerHtml = data.DepertmentBengali;
-            //htmlDocument.GetElementbyId("DepertmentEnglish").InnerHtml = data.DepertmentEnglish;
 
             htmlDocument.GetElementbyId("DepertmentBengaliTable").InnerHtml = data.DepertmentBengali;
             htmlDocument.GetElementbyId("DepertmentEnglishTable").InnerHtml = data.DepertmentEnglish;
