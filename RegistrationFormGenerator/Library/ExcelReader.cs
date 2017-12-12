@@ -107,13 +107,13 @@ namespace RegistrationFormGenerator.Library
                                 row.PermanentAddress = cellValue;
                                 break;
                             case 16:
-                                int parsedInt = 0;
+                                int parsedInt = 1 + (int)Properties.Settings.Default.FacultyName;
                                 if (int.TryParse(cellValue, out parsedInt))
                                 {
                                     if(parsedInt<1 || parsedInt>6)
-                                        parsedInt = 0;
+                                        parsedInt = 1 + (int)Properties.Settings.Default.FacultyName;
                                 }
-                                row.TemplateAutoSelectCode = parsedInt;
+                                row.TemplateAutoSelectCode = parsedInt - 1;
                                 break;
                             case 17:
                                 row.FacultyBengali = cellValue;

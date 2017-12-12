@@ -88,10 +88,7 @@ namespace RegistrationFormGenerator.Library
             htmlDocument.LoadHtml(htmlTemplate);
 
             //////////////////////////Update Bengali And English Text According to User Given Template - Start
-            if (data.TemplateAutoSelectCode > 0)
-                Properties.Settings.Default.FacultyName = (FacultyName)(data.TemplateAutoSelectCode - 1);
-
-            switch (Properties.Settings.Default.FacultyName)
+            switch ((FacultyName)data.TemplateAutoSelectCode)
             {
                 case FacultyName.BusinessStudies:
                     htmlDocument.GetElementbyId("BengaliText").InnerHtml = Properties.Settings.Default.BengaliTextBusinessStudies;
