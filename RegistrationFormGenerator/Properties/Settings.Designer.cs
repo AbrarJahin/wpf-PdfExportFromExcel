@@ -21,18 +21,18 @@ namespace RegistrationFormGenerator.Properties {
         }
 
         public Enums.FacultyName FacultyName { get; internal set; }
-        public string BengaliTextAccountingAndInformation { get; internal set; }
-        public string EnglishTextAccountingAndInformation { get; internal set; }
-        public string BengaliTextBangla { get; internal set; }
-        public string EnglishTextBangla { get; internal set; }
-        public string BengaliTextBotany { get; internal set; }
-        public string EnglishTextBotany { get; internal set; }
+        public string BengaliTextBusinessStudies { get; internal set; }
+        public string EnglishTextBusinessStudies { get; internal set; }
+        public string BengaliTextArtsAndHumanities { get; internal set; }
+        public string EnglishTextArtsAndHumanities { get; internal set; }
+        public string BengaliTextBioSciences { get; internal set; }
+        public string EnglishTextBioSciences { get; internal set; }
         public string BengaliTextLaw { get; internal set; }
         public string EnglishTextLaw { get; internal set; }
-        public string BengaliTextMathematics { get; internal set; }
-        public string EnglishTextMathematics { get; internal set; }
-        public string BengaliTextSociology { get; internal set; }
-        public string EnglishTextSociology { get; internal set; }
+        public string BengaliTextScienceAndEngineering { get; internal set; }
+        public string EnglishTextScienceAndEngineering { get; internal set; }
+        public string BengaliTextSocialSciences { get; internal set; }
+        public string EnglishTextSocialSciences { get; internal set; }
         public bool FirstRun { get; internal set; }
     }
 }

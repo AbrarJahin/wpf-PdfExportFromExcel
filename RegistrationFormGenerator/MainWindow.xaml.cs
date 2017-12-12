@@ -26,23 +26,23 @@ namespace RegistrationFormGenerator
 
                 Properties.Settings.Default.FacultyName = FacultyName.ArtsandHumanities;
 
-                Properties.Settings.Default.BengaliTextAccountingAndInformation = Properties.Resources.BengaliTextAccountingAndInformation;
-                Properties.Settings.Default.EnglishTextAccountingAndInformation = Properties.Resources.EnglishTextAccountingAndInformation;
+                Properties.Settings.Default.BengaliTextBusinessStudies = Properties.Resources.BengaliTextAccountingAndInformation;
+                Properties.Settings.Default.EnglishTextBusinessStudies = Properties.Resources.EnglishTextAccountingAndInformation;
 
-                Properties.Settings.Default.BengaliTextBangla = Properties.Resources.BengaliTextBangla;
-                Properties.Settings.Default.EnglishTextBangla = Properties.Resources.EnglishTextBangla;
+                Properties.Settings.Default.BengaliTextArtsAndHumanities = Properties.Resources.BengaliTextBangla;
+                Properties.Settings.Default.EnglishTextArtsAndHumanities = Properties.Resources.EnglishTextBangla;
 
-                Properties.Settings.Default.BengaliTextBotany = Properties.Resources.BengaliTextBotany;
-                Properties.Settings.Default.EnglishTextBotany = Properties.Resources.EnglishTextBotany;
+                Properties.Settings.Default.BengaliTextBioSciences = Properties.Resources.BengaliTextBotany;
+                Properties.Settings.Default.EnglishTextBioSciences = Properties.Resources.EnglishTextBotany;
 
                 Properties.Settings.Default.BengaliTextLaw = Properties.Resources.BengaliTextLaw;
                 Properties.Settings.Default.EnglishTextLaw = Properties.Resources.EnglishTextLaw;
 
-                Properties.Settings.Default.BengaliTextMathematics = Properties.Resources.BengaliTextMathematics;
-                Properties.Settings.Default.EnglishTextMathematics = Properties.Resources.EnglishTextMathematics;
+                Properties.Settings.Default.BengaliTextScienceAndEngineering = Properties.Resources.BengaliTextMathematics;
+                Properties.Settings.Default.EnglishTextScienceAndEngineering = Properties.Resources.EnglishTextMathematics;
 
-                Properties.Settings.Default.BengaliTextSociology = Properties.Resources.BengaliTextSociology;
-                Properties.Settings.Default.EnglishTextSociology = Properties.Resources.EnglishTextSociology;
+                Properties.Settings.Default.BengaliTextSocialSciences = Properties.Resources.BengaliTextSociology;
+                Properties.Settings.Default.EnglishTextSocialSciences = Properties.Resources.EnglishTextSociology;
 
                 Properties.Settings.Default.Save();
             }
@@ -53,19 +53,19 @@ namespace RegistrationFormGenerator
             switch (Properties.Settings.Default.FacultyName)
             {
                 case FacultyName.ArtsandHumanities:
-                    RadioBangla.IsChecked = true;
-                    BengaliText.Text = Properties.Settings.Default.BengaliTextBangla;
-                    EnglishText.Text = Properties.Settings.Default.EnglishTextBangla;
+                    RadioArtsAndHumanities.IsChecked = true;
+                    BengaliText.Text = Properties.Settings.Default.BengaliTextArtsAndHumanities;
+                    EnglishText.Text = Properties.Settings.Default.EnglishTextArtsAndHumanities;
                     break;
                 case FacultyName.BusinessStudies:
-                    RadioAccountingAndInformation.IsChecked = true;
-                    BengaliText.Text = Properties.Settings.Default.BengaliTextAccountingAndInformation;
-                    EnglishText.Text = Properties.Settings.Default.EnglishTextAccountingAndInformation;
+                    RadioBusinessStudies.IsChecked = true;
+                    BengaliText.Text = Properties.Settings.Default.BengaliTextBusinessStudies;
+                    EnglishText.Text = Properties.Settings.Default.EnglishTextBusinessStudies;
                     break;
                 case FacultyName.BioScience:
-                    RadioBotany.IsChecked = true;
-                    BengaliText.Text = Properties.Settings.Default.BengaliTextBotany;
-                    EnglishText.Text = Properties.Settings.Default.EnglishTextBotany;
+                    RadioBioSciences.IsChecked = true;
+                    BengaliText.Text = Properties.Settings.Default.BengaliTextBioSciences;
+                    EnglishText.Text = Properties.Settings.Default.EnglishTextBioSciences;
                     break;
                 case FacultyName.Law:
                     RadioLaw.IsChecked = true;
@@ -73,14 +73,14 @@ namespace RegistrationFormGenerator
                     EnglishText.Text = Properties.Settings.Default.EnglishTextLaw;
                     break;
                 case FacultyName.ScienceAndEngineering:
-                    RadioMathematics.IsChecked = true;
-                    BengaliText.Text = Properties.Settings.Default.BengaliTextMathematics;
-                    EnglishText.Text = Properties.Settings.Default.EnglishTextMathematics;
+                    RadioScienceAndEngineering.IsChecked = true;
+                    BengaliText.Text = Properties.Settings.Default.BengaliTextScienceAndEngineering;
+                    EnglishText.Text = Properties.Settings.Default.EnglishTextScienceAndEngineering;
                     break;
                 case FacultyName.SocialSciences:
-                    RadioSociology.IsChecked = true;
-                    BengaliText.Text = Properties.Settings.Default.BengaliTextSociology;
-                    EnglishText.Text = Properties.Settings.Default.EnglishTextSociology;
+                    RadioSocialSciences.IsChecked = true;
+                    BengaliText.Text = Properties.Settings.Default.BengaliTextSocialSciences;
+                    EnglishText.Text = Properties.Settings.Default.EnglishTextSocialSciences;
                     break;
             }
         }
@@ -183,41 +183,48 @@ namespace RegistrationFormGenerator
 
             switch (button.Name)
             {
-                case "RadioAccountingAndInformation":
+                case "RadioArtsAndHumanities":
+                    RadioArtsAndHumanities.IsChecked = true;
+                    Properties.Settings.Default.FacultyName = FacultyName.ArtsandHumanities;
+                    BengaliText.Text = Properties.Settings.Default.BengaliTextArtsAndHumanities;
+                    EnglishText.Text = Properties.Settings.Default.EnglishTextArtsAndHumanities;
+                    break;
+                case "RadioBioSciences":
+                    RadioBioSciences.IsChecked = true;
+                    Properties.Settings.Default.FacultyName = FacultyName.BioScience;
+                    BengaliText.Text = Properties.Settings.Default.BengaliTextBioSciences;
+                    EnglishText.Text = Properties.Settings.Default.EnglishTextBioSciences;
+                    break;
+                case "RadioBusinessStudies":
+                    RadioBusinessStudies.IsChecked = true;
                     Properties.Settings.Default.FacultyName = FacultyName.BusinessStudies;
-                    BengaliText.Text = Properties.Settings.Default.BengaliTextAccountingAndInformation;
-                    EnglishText.Text = Properties.Settings.Default.EnglishTextAccountingAndInformation;
-                    break;
-                case "RadioBangla":
-                    RadioBangla.IsChecked = true;
-                    BengaliText.Text = Properties.Settings.Default.BengaliTextBangla;
-                    EnglishText.Text = Properties.Settings.Default.EnglishTextBangla;
-                    break;
-                case "RadioBotany":
-                    RadioBotany.IsChecked = true;
-                    BengaliText.Text = Properties.Settings.Default.BengaliTextBotany;
-                    EnglishText.Text = Properties.Settings.Default.EnglishTextBotany;
+                    BengaliText.Text = Properties.Settings.Default.BengaliTextBusinessStudies;
+                    EnglishText.Text = Properties.Settings.Default.EnglishTextBusinessStudies;
                     break;
                 case "RadioLaw":
                     RadioLaw.IsChecked = true;
+                    Properties.Settings.Default.FacultyName = FacultyName.Law;
                     BengaliText.Text = Properties.Settings.Default.BengaliTextLaw;
                     EnglishText.Text = Properties.Settings.Default.EnglishTextLaw;
                     break;
-                case "RadioMathematics":
-                    RadioMathematics.IsChecked = true;
-                    BengaliText.Text = Properties.Settings.Default.BengaliTextMathematics;
-                    EnglishText.Text = Properties.Settings.Default.EnglishTextMathematics;
+                case "RadioScienceAndEngineering":
+                    RadioScienceAndEngineering.IsChecked = true;
+                    Properties.Settings.Default.FacultyName = FacultyName.ScienceAndEngineering;
+                    BengaliText.Text = Properties.Settings.Default.BengaliTextScienceAndEngineering;
+                    EnglishText.Text = Properties.Settings.Default.EnglishTextScienceAndEngineering;
                     break;
-                case "RadioSociology":
-                    RadioSociology.IsChecked = true;
-                    BengaliText.Text = Properties.Settings.Default.BengaliTextSociology;
-                    EnglishText.Text = Properties.Settings.Default.EnglishTextSociology;
+                case "RadioSocialSciences":
+                    RadioSocialSciences.IsChecked = true;
+                    Properties.Settings.Default.FacultyName = FacultyName.SocialSciences;
+                    BengaliText.Text = Properties.Settings.Default.BengaliTextSocialSciences;
+                    EnglishText.Text = Properties.Settings.Default.EnglishTextSocialSciences;
                     break;
                 default:
                     // ... Display button content as title.
                     this.Title = button.Content.ToString();
                     break;
             }
+            Properties.Settings.Default.Save();
             _locker = false;
         }
 
@@ -230,29 +237,29 @@ namespace RegistrationFormGenerator
 
             switch (Properties.Settings.Default.FacultyName)
             {
-                case FacultyName.BusinessStudies:
-                    Properties.Settings.Default.BengaliTextAccountingAndInformation = BengaliText.Text;
-                    Properties.Settings.Default.EnglishTextAccountingAndInformation = EnglishText.Text;
-                    break;
                 case FacultyName.ArtsandHumanities:
-                    Properties.Settings.Default.BengaliTextBangla = BengaliText.Text;
-                    Properties.Settings.Default.EnglishTextBangla = EnglishText.Text;
+                    Properties.Settings.Default.BengaliTextArtsAndHumanities = BengaliText.Text;
+                    Properties.Settings.Default.EnglishTextArtsAndHumanities = EnglishText.Text;
                     break;
                 case FacultyName.BioScience:
-                    Properties.Settings.Default.BengaliTextBotany = BengaliText.Text;
-                    Properties.Settings.Default.EnglishTextBotany = EnglishText.Text;
+                    Properties.Settings.Default.BengaliTextBioSciences = BengaliText.Text;
+                    Properties.Settings.Default.EnglishTextBioSciences = EnglishText.Text;
+                    break;
+                case FacultyName.BusinessStudies:
+                    Properties.Settings.Default.BengaliTextBusinessStudies = BengaliText.Text;
+                    Properties.Settings.Default.EnglishTextBusinessStudies = EnglishText.Text;
                     break;
                 case FacultyName.Law:
                     Properties.Settings.Default.BengaliTextLaw = BengaliText.Text;
                     Properties.Settings.Default.EnglishTextLaw = EnglishText.Text;
                     break;
                 case FacultyName.ScienceAndEngineering:
-                    Properties.Settings.Default.BengaliTextMathematics = BengaliText.Text;
-                    Properties.Settings.Default.EnglishTextMathematics = EnglishText.Text;
+                    Properties.Settings.Default.BengaliTextScienceAndEngineering = BengaliText.Text;
+                    Properties.Settings.Default.EnglishTextScienceAndEngineering = EnglishText.Text;
                     break;
                 case FacultyName.SocialSciences:
-                    Properties.Settings.Default.BengaliTextSociology = BengaliText.Text;
-                    Properties.Settings.Default.EnglishTextSociology = EnglishText.Text;
+                    Properties.Settings.Default.BengaliTextSocialSciences = BengaliText.Text;
+                    Properties.Settings.Default.EnglishTextSocialSciences = EnglishText.Text;
                     break;
                 default:
                     this.Title = textBox.Name.ToString();
