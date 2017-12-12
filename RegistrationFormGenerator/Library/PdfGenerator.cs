@@ -87,7 +87,7 @@ namespace RegistrationFormGenerator.Library
             HtmlDocument htmlDocument = new HtmlDocument();
             htmlDocument.LoadHtml(htmlTemplate);
 
-            //Update Bengali And English Text
+            //////////////////////////Update Bengali And English Text According to User Given Template - Start
             switch (Properties.Settings.Default.FacultyName)
             {
                 case FacultyName.BusinessStudies:
@@ -115,7 +115,30 @@ namespace RegistrationFormGenerator.Library
                     htmlDocument.GetElementbyId("EnglishText").InnerHtml = Properties.Settings.Default.EnglishTextSocialSciences;
                     break;
             }
-            //Update html
+
+            htmlDocument.LoadHtml(htmlDocument.DocumentNode.OuterHtml); //Regenerate template with User given template input
+
+            try
+            {
+                if (data.DegreeNameBengali.Length > 1 && data.DegreeNameEnglish.Length > 1)
+                {
+                    htmlDocument.GetElementbyId("DegreeNameBengali").InnerHtml = data.DegreeNameEnglish;
+                    htmlDocument.GetElementbyId("DegreeNameEnglish").InnerHtml = data.DegreeNameEnglish;
+                }
+                if (data.SessionBengali.Length > 1 && data.SessionEnglish.Length > 1)
+                {
+                    htmlDocument.GetElementbyId("SessionBengali").InnerHtml = data.SessionBengali;
+                    htmlDocument.GetElementbyId("SessionEnglish").InnerHtml = data.SessionEnglish;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                MessageBox.Show("Please give template in correct format !!");
+            }
+            //////////////////////////Update Bengali And English Text According to User Given Template - End
+
+
             htmlDocument.GetElementbyId("RegistrationNo").InnerHtml = data.RegistrationNo;
 
             htmlDocument.GetElementbyId("Image").SetAttributeValue("src", imageFolderLocation +"\\"+ data.RegistrationNo+".jpg");
@@ -140,21 +163,7 @@ namespace RegistrationFormGenerator.Library
 
             htmlDocument.GetElementbyId("ChairmanDepertmentBengali").InnerHtml = data.DepertmentBengali;
             htmlDocument.GetElementbyId("ChairmanDepertmentEnglish").InnerHtml = data.DepertmentEnglish;
-            /*
-            try
-            {
-                //Not Needed Now
-                htmlDocument.GetElementbyId("DegreeNameBengali").InnerHtml = data.DegreeNameEnglish;
-                htmlDocument.GetElementbyId("DegreeNameEnglish").InnerHtml = data.DegreeNameEnglish;
 
-                htmlDocument.GetElementbyId("SessionBengali").InnerHtml = data.SessionBengali;
-                htmlDocument.GetElementbyId("SessionEnglish").InnerHtml = data.SessionEnglish;
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-            */
             return htmlDocument.DocumentNode.OuterHtml;
         }
     }

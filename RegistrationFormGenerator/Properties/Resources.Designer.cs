@@ -61,29 +61,29 @@ namespace RegistrationFormGenerator.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to বরিশাল বিশ্ববিদ্যালয়ে  &lt;span id=&quot;SessionBengali&quot;&gt;২০১৬-১৭&lt;/span&gt; শিক্ষাবর্ষে উল্লেখিত বিভাগ এর &lt;span id=&quot;DegreeNameBengali&quot;&gt;ব্যাচেলর অফ বিজনেস এডমিনিস্ট্রেশন (বি. বি. এ.)&lt;/span&gt; পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।.
-        /// </summary>
-        internal static string BengaliTextAccountingAndInformation {
-            get {
-                return ResourceManager.GetString("BengaliTextAccountingAndInformation", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to বরিশাল বিশ্ববিদ্যালয়ে  &lt;span id=&quot;SessionBengali&quot;&gt;২০১৬-১৭&lt;/span&gt; শিক্ষাবর্ষে উল্লেখিত বিভাগ এর &lt;span id=&quot;DegreeNameBengali&quot;&gt;ব্যাচেলর অফ আর্টস (বি এ)&lt;/span&gt; পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।.
         /// </summary>
-        internal static string BengaliTextBangla {
+        internal static string BengaliTextArtsAndHumanities {
             get {
-                return ResourceManager.GetString("BengaliTextBangla", resourceCulture);
+                return ResourceManager.GetString("BengaliTextArtsAndHumanities", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to বরিশাল বিশ্ববিদ্যালয়ে  &lt;span id=&quot;SessionBengali&quot;&gt;২০১৬-১৭&lt;/span&gt; শিক্ষাবর্ষে উল্লেখিত বিভাগ এর &lt;span id=&quot;DegreeNameBengali&quot;&gt;ব্যাচেলর অফ সাইন্স (বি এস)&lt;/span&gt; পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।.
         /// </summary>
-        internal static string BengaliTextBotany {
+        internal static string BengaliTextBioSciences {
             get {
-                return ResourceManager.GetString("BengaliTextBotany", resourceCulture);
+                return ResourceManager.GetString("BengaliTextBioSciences", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to বরিশাল বিশ্ববিদ্যালয়ে  &lt;span id=&quot;SessionBengali&quot;&gt;২০১৬-১৭&lt;/span&gt; শিক্ষাবর্ষে উল্লেখিত বিভাগ এর &lt;span id=&quot;DegreeNameBengali&quot;&gt;ব্যাচেলর অফ বিজনেস এডমিনিস্ট্রেশন (বি. বি. এ.)&lt;/span&gt; পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।.
+        /// </summary>
+        internal static string BengaliTextBusinessStudies {
+            get {
+                return ResourceManager.GetString("BengaliTextBusinessStudies", resourceCulture);
             }
         }
         
@@ -99,45 +99,45 @@ namespace RegistrationFormGenerator.Properties {
         /// <summary>
         ///   Looks up a localized string similar to বরিশাল বিশ্ববিদ্যালয়ে  &lt;span id=&quot;SessionBengali&quot;&gt;২০১৬-১৭&lt;/span&gt; শিক্ষাবর্ষে উল্লেখিত বিভাগ এর &lt;span id=&quot;DegreeNameBengali&quot;&gt;ব্যাচেলর অফ সাইন্স (বি এস)&lt;/span&gt; পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।.
         /// </summary>
-        internal static string BengaliTextMathematics {
+        internal static string BengaliTextScienceAndEngineering {
             get {
-                return ResourceManager.GetString("BengaliTextMathematics", resourceCulture);
+                return ResourceManager.GetString("BengaliTextScienceAndEngineering", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to বরিশাল বিশ্ববিদ্যালয়ে  &lt;span id=&quot;SessionBengali&quot;&gt;২০১৬-১৭&lt;/span&gt; শিক্ষাবর্ষে উল্লেখিত বিভাগ এর &lt;span id=&quot;DegreeNameBengali&quot;&gt;ব্যাচেলর অফ সোশ্যাল সাইন্স (বি এস এস)&lt;/span&gt; পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।.
         /// </summary>
-        internal static string BengaliTextSociology {
+        internal static string BengaliTextSocialSciences {
             get {
-                return ResourceManager.GetString("BengaliTextSociology", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to The above mentioned student is admitted in the &lt;span id=&quot;DegreeNameEnglish&quot;&gt;Bachelor of Business Administration (B.B.A.)&lt;/span&gt; Program of mentioned Department in the &lt;span id=&quot;SessionEnglish&quot;&gt;2016-17&lt;/span&gt; academic year and he is registered as a student of the university..
-        /// </summary>
-        internal static string EnglishTextAccountingAndInformation {
-            get {
-                return ResourceManager.GetString("EnglishTextAccountingAndInformation", resourceCulture);
+                return ResourceManager.GetString("BengaliTextSocialSciences", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to The above mentioned student is admitted in the &lt;span id=&quot;DegreeNameEnglish&quot;&gt;Bachelor of Bachelor of Arts (B.A.)&lt;/span&gt; Program of mentioned Department in the &lt;span id=&quot;SessionEnglish&quot;&gt;2016-17&lt;/span&gt; academic year and he is registered as a student of the university..
         /// </summary>
-        internal static string EnglishTextBangla {
+        internal static string EnglishTextArtsAndHumanities {
             get {
-                return ResourceManager.GetString("EnglishTextBangla", resourceCulture);
+                return ResourceManager.GetString("EnglishTextArtsAndHumanities", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to The above mentioned student is admitted in the &lt;span id=&quot;DegreeNameEnglish&quot;&gt;Bachelor of Science (B.S.)&lt;/span&gt; Program of mentioned Department in the &lt;span id=&quot;SessionEnglish&quot;&gt;2016-17&lt;/span&gt; academic year and he is registered as a student of the university..
         /// </summary>
-        internal static string EnglishTextBotany {
+        internal static string EnglishTextBioSciences {
             get {
-                return ResourceManager.GetString("EnglishTextBotany", resourceCulture);
+                return ResourceManager.GetString("EnglishTextBioSciences", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The above mentioned student is admitted in the &lt;span id=&quot;DegreeNameEnglish&quot;&gt;Bachelor of Business Administration (B.B.A.)&lt;/span&gt; Program of mentioned Department in the &lt;span id=&quot;SessionEnglish&quot;&gt;2016-17&lt;/span&gt; academic year and he is registered as a student of the university..
+        /// </summary>
+        internal static string EnglishTextBusinessStudies {
+            get {
+                return ResourceManager.GetString("EnglishTextBusinessStudies", resourceCulture);
             }
         }
         
@@ -153,18 +153,18 @@ namespace RegistrationFormGenerator.Properties {
         /// <summary>
         ///   Looks up a localized string similar to The above mentioned student is admitted in the &lt;span id=&quot;DegreeNameEnglish&quot;&gt;Bachelor of Science (B.S.)&lt;/span&gt; Program of mentioned Department in the &lt;span id=&quot;SessionEnglish&quot;&gt;2016-17&lt;/span&gt; academic year and he is registered as a student of the university..
         /// </summary>
-        internal static string EnglishTextMathematics {
+        internal static string EnglishTextScienceAndEngineering {
             get {
-                return ResourceManager.GetString("EnglishTextMathematics", resourceCulture);
+                return ResourceManager.GetString("EnglishTextScienceAndEngineering", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to The above mentioned student is admitted in the &lt;span id=&quot;DegreeNameEnglish&quot;&gt;Bachelor of Social Science (B.S.S.)&lt;/span&gt; Program of mentioned Department in the &lt;span id=&quot;SessionEnglish&quot;&gt;2016-17&lt;/span&gt; academic year and he is registered as a student of the university..
         /// </summary>
-        internal static string EnglishTextSociology {
+        internal static string EnglishTextSocialSciences {
             get {
-                return ResourceManager.GetString("EnglishTextSociology", resourceCulture);
+                return ResourceManager.GetString("EnglishTextSocialSciences", resourceCulture);
             }
         }
         
@@ -191,19 +191,18 @@ namespace RegistrationFormGenerator.Properties {
         /// <summary>
         ///   Looks up a localized string similar to &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
         ///&lt;head&gt;
-        ///    &lt;title&gt;  CERTIFICATE OF REGISTRATION&lt;/title&gt;
+        ///    &lt;title&gt;  CERTIFICATE OF ADMISSION&lt;/title&gt;
         ///&lt;/head&gt;
         ///&lt;body&gt;
         ///    &lt;table align=&quot;right&quot; width=&quot;30%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; border=&quot;1&quot;&gt;
         ///        &lt;tbody&gt;
         ///            &lt;tr&gt;
-        ///                &lt;td width=&quot;250&quot; valign=&quot;top&quot;&gt;
-        ///                    &lt;p&gt;
-        ///                        রেজিস্ট্রেশন নম্বর&lt;br /&gt;(REGISTRATION NO.)
-        ///                    &lt;/p&gt;
+        ///                &lt;td style=&quot;min-width:170px&quot; valign=&quot;top&quot;&gt;
+        ///                    রেজিস্ট্রেশন নম্বর&lt;br /&gt;(REGISTRATION NO.)
         ///                &lt;/td&gt;
-        ///                &lt;td colspan=&quot;3&quot; width=&quot;70&quot; valign=&quot;top&quot;&gt;
-        ///                    &lt;p id=&quot;R [rest of string was truncated]&quot;;.
+        ///                &lt;td colspan=&quot;10&quot; valign=&quot;top&quot; id=&quot;RegistrationNo&quot; style=&quot;min-width:70px&quot;&gt;
+        ///                    BA-1245
+        ///             [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Html_Template {
             get {

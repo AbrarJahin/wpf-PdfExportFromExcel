@@ -130,40 +130,40 @@
   <data name="SolaimanLipi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\SolaimanLipi.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="BengaliTextAccountingAndInformation" xml:space="preserve">
+  <data name="BengaliTextBusinessStudies" xml:space="preserve">
     <value>বরিশাল বিশ্ববিদ্যালয়ে  &lt;span id="SessionBengali"&gt;২০১৬-১৭&lt;/span&gt; শিক্ষাবর্ষে উল্লেখিত বিভাগ এর &lt;span id="DegreeNameBengali"&gt;ব্যাচেলর অফ বিজনেস এডমিনিস্ট্রেশন (বি. বি. এ.)&lt;/span&gt; পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।</value>
   </data>
-  <data name="BengaliTextBangla" xml:space="preserve">
+  <data name="BengaliTextArtsAndHumanities" xml:space="preserve">
     <value>বরিশাল বিশ্ববিদ্যালয়ে  &lt;span id="SessionBengali"&gt;২০১৬-১৭&lt;/span&gt; শিক্ষাবর্ষে উল্লেখিত বিভাগ এর &lt;span id="DegreeNameBengali"&gt;ব্যাচেলর অফ আর্টস (বি এ)&lt;/span&gt; পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।</value>
   </data>
-  <data name="BengaliTextBotany" xml:space="preserve">
+  <data name="BengaliTextBioSciences" xml:space="preserve">
     <value>বরিশাল বিশ্ববিদ্যালয়ে  &lt;span id="SessionBengali"&gt;২০১৬-১৭&lt;/span&gt; শিক্ষাবর্ষে উল্লেখিত বিভাগ এর &lt;span id="DegreeNameBengali"&gt;ব্যাচেলর অফ সাইন্স (বি এস)&lt;/span&gt; পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।</value>
   </data>
   <data name="BengaliTextLaw" xml:space="preserve">
     <value>বরিশাল বিশ্ববিদ্যালয়ে  &lt;span id="SessionBengali"&gt;২০১৬-১৭&lt;/span&gt; শিক্ষাবর্ষে উল্লেখিত বিভাগ এর &lt;span id="DegreeNameBengali"&gt;ব্যাচেলর অফ ল (এল এল বি)&lt;/span&gt; পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।</value>
   </data>
-  <data name="BengaliTextMathematics" xml:space="preserve">
+  <data name="BengaliTextScienceAndEngineering" xml:space="preserve">
     <value>বরিশাল বিশ্ববিদ্যালয়ে  &lt;span id="SessionBengali"&gt;২০১৬-১৭&lt;/span&gt; শিক্ষাবর্ষে উল্লেখিত বিভাগ এর &lt;span id="DegreeNameBengali"&gt;ব্যাচেলর অফ সাইন্স (বি এস)&lt;/span&gt; পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।</value>
   </data>
-  <data name="BengaliTextSociology" xml:space="preserve">
+  <data name="BengaliTextSocialSciences" xml:space="preserve">
     <value>বরিশাল বিশ্ববিদ্যালয়ে  &lt;span id="SessionBengali"&gt;২০১৬-১৭&lt;/span&gt; শিক্ষাবর্ষে উল্লেখিত বিভাগ এর &lt;span id="DegreeNameBengali"&gt;ব্যাচেলর অফ সোশ্যাল সাইন্স (বি এস এস)&lt;/span&gt; পাঠক্রমে উপর্যুক্ত  শিক্ষার্থীর ভর্তি প্রক্রিয়া সম্পন্ন হয়েছে এবং একজন শিক্ষার্থী হিসেবে বিশ্ববিদ্যালয়ে তাকে নিবন্ধিত করা হয়েছে।</value>
   </data>
-  <data name="EnglishTextAccountingAndInformation" xml:space="preserve">
+  <data name="EnglishTextBusinessStudies" xml:space="preserve">
     <value>The above mentioned student is admitted in the &lt;span id="DegreeNameEnglish"&gt;Bachelor of Business Administration (B.B.A.)&lt;/span&gt; Program of mentioned Department in the &lt;span id="SessionEnglish"&gt;2016-17&lt;/span&gt; academic year and he is registered as a student of the university.</value>
   </data>
-  <data name="EnglishTextBangla" xml:space="preserve">
+  <data name="EnglishTextArtsAndHumanities" xml:space="preserve">
     <value>The above mentioned student is admitted in the &lt;span id="DegreeNameEnglish"&gt;Bachelor of Bachelor of Arts (B.A.)&lt;/span&gt; Program of mentioned Department in the &lt;span id="SessionEnglish"&gt;2016-17&lt;/span&gt; academic year and he is registered as a student of the university.</value>
   </data>
-  <data name="EnglishTextBotany" xml:space="preserve">
+  <data name="EnglishTextBioSciences" xml:space="preserve">
     <value>The above mentioned student is admitted in the &lt;span id="DegreeNameEnglish"&gt;Bachelor of Science (B.S.)&lt;/span&gt; Program of mentioned Department in the &lt;span id="SessionEnglish"&gt;2016-17&lt;/span&gt; academic year and he is registered as a student of the university.</value>
   </data>
   <data name="EnglishTextLaw" xml:space="preserve">
     <value>The above mentioned student is admitted in the &lt;span id="DegreeNameEnglish"&gt;Bachelor of Law (L.L.B.)&lt;/span&gt; Program of mentioned Department in the &lt;span id="SessionEnglish"&gt;2016-17&lt;/span&gt; academic year and he is registered as a student of the university.</value>
   </data>
-  <data name="EnglishTextMathematics" xml:space="preserve">
+  <data name="EnglishTextScienceAndEngineering" xml:space="preserve">
     <value>The above mentioned student is admitted in the &lt;span id="DegreeNameEnglish"&gt;Bachelor of Science (B.S.)&lt;/span&gt; Program of mentioned Department in the &lt;span id="SessionEnglish"&gt;2016-17&lt;/span&gt; academic year and he is registered as a student of the university.</value>
   </data>
-  <data name="EnglishTextSociology" xml:space="preserve">
+  <data name="EnglishTextSocialSciences" xml:space="preserve">
     <value>The above mentioned student is admitted in the &lt;span id="DegreeNameEnglish"&gt;Bachelor of Social Science (B.S.S.)&lt;/span&gt; Program of mentioned Department in the &lt;span id="SessionEnglish"&gt;2016-17&lt;/span&gt; academic year and he is registered as a student of the university.</value>
   </data>
 </root>

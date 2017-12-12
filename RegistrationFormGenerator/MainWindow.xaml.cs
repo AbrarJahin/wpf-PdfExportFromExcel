@@ -26,23 +26,23 @@ namespace RegistrationFormGenerator
 
                 Properties.Settings.Default.FacultyName = FacultyName.ArtsandHumanities;
 
-                Properties.Settings.Default.BengaliTextBusinessStudies = Properties.Resources.BengaliTextAccountingAndInformation;
-                Properties.Settings.Default.EnglishTextBusinessStudies = Properties.Resources.EnglishTextAccountingAndInformation;
+                Properties.Settings.Default.BengaliTextBusinessStudies = Properties.Resources.BengaliTextBusinessStudies;
+                Properties.Settings.Default.EnglishTextBusinessStudies = Properties.Resources.EnglishTextBusinessStudies;
 
-                Properties.Settings.Default.BengaliTextArtsAndHumanities = Properties.Resources.BengaliTextBangla;
-                Properties.Settings.Default.EnglishTextArtsAndHumanities = Properties.Resources.EnglishTextBangla;
+                Properties.Settings.Default.BengaliTextArtsAndHumanities = Properties.Resources.BengaliTextArtsAndHumanities;
+                Properties.Settings.Default.EnglishTextArtsAndHumanities = Properties.Resources.EnglishTextArtsAndHumanities;
 
-                Properties.Settings.Default.BengaliTextBioSciences = Properties.Resources.BengaliTextBotany;
-                Properties.Settings.Default.EnglishTextBioSciences = Properties.Resources.EnglishTextBotany;
+                Properties.Settings.Default.BengaliTextBioSciences = Properties.Resources.BengaliTextBioSciences;
+                Properties.Settings.Default.EnglishTextBioSciences = Properties.Resources.EnglishTextBioSciences;
 
                 Properties.Settings.Default.BengaliTextLaw = Properties.Resources.BengaliTextLaw;
                 Properties.Settings.Default.EnglishTextLaw = Properties.Resources.EnglishTextLaw;
 
-                Properties.Settings.Default.BengaliTextScienceAndEngineering = Properties.Resources.BengaliTextMathematics;
-                Properties.Settings.Default.EnglishTextScienceAndEngineering = Properties.Resources.EnglishTextMathematics;
+                Properties.Settings.Default.BengaliTextScienceAndEngineering = Properties.Resources.BengaliTextScienceAndEngineering;
+                Properties.Settings.Default.EnglishTextScienceAndEngineering = Properties.Resources.EnglishTextScienceAndEngineering;
 
-                Properties.Settings.Default.BengaliTextSocialSciences = Properties.Resources.BengaliTextSociology;
-                Properties.Settings.Default.EnglishTextSocialSciences = Properties.Resources.EnglishTextSociology;
+                Properties.Settings.Default.BengaliTextSocialSciences = Properties.Resources.BengaliTextSocialSciences;
+                Properties.Settings.Default.EnglishTextSocialSciences = Properties.Resources.EnglishTextSocialSciences;
 
                 Properties.Settings.Default.Save();
             }
