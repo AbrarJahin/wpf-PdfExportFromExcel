@@ -137,11 +137,7 @@ namespace RegistrationFormGenerator
                 ProgressPdfCreatePercenage.Value += (int)(100/excelDataList.Count);  //Progress bar increament
                 ExcelPdfGenerator.GenerateHtmlPdf(data, ImageFolderLocation.Text,OutputFolderLocation.Text);      //Generate PDF Here
             }
-            #if DEBUG
-                MessageBox.Show("Done");
-            #else
-                ResetFields();
-            #endif
+            ResetFields();
         }
 
         private void ResetFields()
