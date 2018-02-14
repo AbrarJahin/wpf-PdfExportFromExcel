@@ -72,10 +72,10 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>C226567CCCCD95757A42575FE214D7AD1CD93C46</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>96DA6493E9E261B04AB7B5A2F1ADE2DF4689A6BA</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>RegistrationFormGenerator_1_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>AbrarJahin.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>
@@ -184,6 +184,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <None Include="AbrarJahin.pfx" />
     <None Include="Assets\ExcelFormet.xlsx" />
     <Resource Include="Assets\SolaimanLipi.ttf" />
     <None Include="packages.config" />
