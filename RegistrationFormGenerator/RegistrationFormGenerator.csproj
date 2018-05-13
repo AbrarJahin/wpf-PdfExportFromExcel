@@ -173,7 +173,6 @@
     </EmbeddedResource>
     <None Include="AbrarJahin.pfx" />
     <None Include="Assets\ExcelFormet.xlsx" />
-    <None Include="RegistrationFormGenerator_TemporaryKey.pfx" />
     <Resource Include="Assets\SolaimanLipi.ttf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
