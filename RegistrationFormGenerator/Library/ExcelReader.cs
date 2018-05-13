@@ -57,6 +57,7 @@ namespace RegistrationFormGenerator.Library
                         catch (Exception ex)
                         {
                             cellValue = "";
+                            Console.WriteLine(ex.ToString());
                         }
 
                         switch (j)
