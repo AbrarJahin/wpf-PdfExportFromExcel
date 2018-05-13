@@ -122,7 +122,7 @@ namespace RegistrationFormGenerator.Library
             {
                 if (data.DegreeNameBengali.Length > 1 && data.DegreeNameEnglish.Length > 1)
                 {
-                    htmlDocument.GetElementbyId("DegreeNameBengali").InnerHtml = data.DegreeNameEnglish;
+                    htmlDocument.GetElementbyId("DegreeNameBengali").InnerHtml = data.DegreeNameBengali;
                     htmlDocument.GetElementbyId("DegreeNameEnglish").InnerHtml = data.DegreeNameEnglish;
                 }
                 if (data.SessionBengali.Length > 1 && data.SessionEnglish.Length > 1)

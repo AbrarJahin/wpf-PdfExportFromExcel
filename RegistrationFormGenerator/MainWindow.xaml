@@ -6,7 +6,7 @@
         xmlns:adorners="http://gu.se/Adorners"
         mc:Ignorable="d"
         ResizeMode="NoResize"
-        Title="Registration Card Generator" Height="479.4" Width="517.5">
+        Title="Registration Card Generator By Abrar" Height="479.4" Width="517.5">
 
     <Grid>
         <Label
